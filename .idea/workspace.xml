@@ -4,10 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Created files">
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="added customtkinter and CTkMenuBar">
+      <change afterPath="$PROJECT_DIR$/utils/edit.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/file.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/backup.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/customization.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/about.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,11 +80,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,14 +155,40 @@
       <option name="project" value="LOCAL" />
       <updated>1721423129955</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added TitleBar">
+      <option name="closed" value="true" />
+      <created>1721426353451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1721426353451</updated>
+    </task>
+    <task id="LOCAL-00007" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721426363484</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1721426363484</updated>
+    </task>
+    <task id="LOCAL-00008" summary="added customtkinter and CTkMenuBar">
+      <option name="closed" value="true" />
+      <created>1721426384490</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1721426384490</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Database" />
     <MESSAGE value="Created Package" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Created files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created files" />
+    <MESSAGE value="Added TitleBar" />
+    <MESSAGE value=".idea" />
+    <MESSAGE value="added customtkinter and CTkMenuBar" />
+    <option name="LAST_COMMIT_MESSAGE" value="added customtkinter and CTkMenuBar" />
   </component>
 </project>
