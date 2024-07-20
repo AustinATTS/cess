@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Updated Directory name and added crude navigation pane">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/about.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/about.py" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/utils/file.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +174,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721428126866</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added functions Website, Github and basic for descirption">
+      <option name="closed" value="true" />
+      <created>1721475191956</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1721475191956</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Imported new functions">
+      <option name="closed" value="true" />
+      <created>1721475225226</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1721475225226</updated>
+    </task>
+    <task id="LOCAL-00012" summary="added webbrowser">
+      <option name="closed" value="true" />
+      <created>1721475234533</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1721475234533</updated>
+    </task>
+    <task id="LOCAL-00013" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721475241664</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1721475241664</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,9 +214,12 @@
     <MESSAGE value="Created Package" />
     <MESSAGE value="Created files" />
     <MESSAGE value="Added TitleBar" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="added customtkinter and CTkMenuBar" />
     <MESSAGE value="Updated Directory name and added crude navigation pane" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Directory name and added crude navigation pane" />
+    <MESSAGE value="Added functions Website, Github and basic for descirption" />
+    <MESSAGE value="Imported new functions" />
+    <MESSAGE value="added webbrowser" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
