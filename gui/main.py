@@ -1,5 +1,8 @@
 import customtkinter as ctk
 import CTkMenuBar as ctkmb
+from utils.file import save, restore_latest, restore_custom
+from utils.edit import add_record, update_record, delete_record
+from utils.settings import logout, colour_scheme, scale
 from utils.about import website, github, description
 
 class App(ctk.CTk):
@@ -17,21 +20,21 @@ class App(ctk.CTk):
         self.about_button = self.title_menu.add_cascade("About", fg_color="transparent")
 
         self.file_dropdown = ctkmb.CustomDropdownMenu(widget=self.file_button)
-        self.file_dropdown.add_option(option="Save", command=lambda: print("Save, add create backup"))
+        self.file_dropdown.add_option(option="Save", command=save)
 
         self.file_sub_menu = self.file_dropdown.add_submenu("Open")
-        self.file_sub_menu.add_option(option="Restore Latest", command=lambda: print("Open Latest, add restore latest"))
-        self.file_sub_menu.add_option(option="Restore Custom", command=lambda: print("Open Custom, add restore custom"))
+        self.file_sub_menu.add_option(option="Restore Latest", command=restore_latest)
+        self.file_sub_menu.add_option(option="Restore Custom", command=restore_custom)
 
         self.edit_dropdown = ctkmb.CustomDropdownMenu(widget=self.edit_button)
-        self.edit_dropdown.add_option(option="Add Record", command=lambda: print("Add"))
-        self.edit_dropdown.add_option(option="Update Record", command=lambda: print("Update"))
-        self.edit_dropdown.add_option(option="Delete Record", command=lambda: print("Delete"))
+        self.edit_dropdown.add_option(option="Add Record", command=add_record)
+        self.edit_dropdown.add_option(option="Update Record", command=update_record)
+        self.edit_dropdown.add_option(option="Delete Record", command=delete_record)
 
         self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
-        self.settings_dropdown.add_option(option="Logout", command=lambda: print("Logout"))
-        self.settings_dropdown.add_option(option="Colour Scheme", command=lambda: print("Colour Scheme"))
-        self.settings_dropdown.add_option(option="Scale", command=lambda: print("Scale"))
+        self.settings_dropdown.add_option(option="Logout", command=logout)
+        self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
+        self.settings_dropdown.add_option(option="Scale", command=scale)
 
         self.about_dropdown = ctkmb.CustomDropdownMenu(widget=self.about_button)
         self.about_dropdown.add_option(option="Website", command=website)
