@@ -1,3 +1,2 @@
-customtkinter
-CTkMenuBar
-webbrowser
+customtkinter~=5.2.2
+CTkMenuBar~=0.8
