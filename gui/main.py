@@ -1,6 +1,6 @@
 import customtkinter as ctk
 import CTkMenuBar as ctkmb
-
+from utils.about import website, github, description
 
 class App(ctk.CTk):
     def __init__(self):
@@ -34,9 +34,9 @@ class App(ctk.CTk):
         self.settings_dropdown.add_option(option="Scale", command=lambda: print("Scale"))
 
         self.about_dropdown = ctkmb.CustomDropdownMenu(widget=self.about_button)
-        self.about_dropdown.add_option(option="Website", command=lambda: print("Website"))
-        self.about_dropdown.add_option(option="GitHub", command=lambda: print("GitHub"))
-        self.about_dropdown.add_option(option="Description", command=lambda: print("Description"))
+        self.about_dropdown.add_option(option="Website", command=website)
+        self.about_dropdown.add_option(option="GitHub", command=github)
+        self.about_dropdown.add_option(option="Description", command=description)
 
         self.navigation_frame = ctk.CTkFrame(self)
         self.navigation_frame.pack()
