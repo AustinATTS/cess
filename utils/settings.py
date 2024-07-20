@@ -5,6 +5,5 @@ def logout():
 def colour_scheme():
     pass
 
-
 def scale():
     pass
