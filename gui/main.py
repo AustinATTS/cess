@@ -120,6 +120,7 @@ class App(ctk.CTk):
 
             if subject != "" and feedback != "":
                 webbrowser.open(mailto_link)
+                feedback_toplevel.destroy()
             else:
                 ctkm.CTkMessagebox(title="Error", message="Something went wrong!!!", icon="cancel")
 
