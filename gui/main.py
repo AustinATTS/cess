@@ -1,16 +1,24 @@
 import customtkinter as ctk
 import CTkMenuBar as ctkmb
+from PIL import Image
+import os
 from utils.file import save, restore_latest, restore_custom
 from utils.edit import add_record, update_record, delete_record
 from utils.settings import logout, colour_scheme, scale
 from utils.about import website, github, description
+
 
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
         self.title("College Event Score System")
-        self.geometry("800x600")
+        self.geometry(f"{1000}x{580}")
+        self.bind("<1>", lambda event: event.widget.focus_set())
+
+        self.grid_columnconfigure(1, weight=1)
+        self.grid_columnconfigure((2, 3), weight=0)
+        self.grid_rowconfigure((0, 1, 2), weight=1)
 
         self.title_menu = ctkmb.CTkTitleMenu(self)
 
@@ -41,20 +49,63 @@ class App(ctk.CTk):
         self.about_dropdown.add_option(option="GitHub", command=github)
         self.about_dropdown.add_option(option="Description", command=description)
 
-        self.navigation_frame = ctk.CTkFrame(self)
-        self.navigation_frame.pack()
+        self.navigation_frame = ctk.CTkFrame(self, width=250, corner_radius=0)
+        self.navigation_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
+        self.navigation_frame.grid_rowconfigure(4, weight=1)
 
-        self.participants_button = ctk.CTkButton(self.navigation_frame)
-        self.events_button = ctk.CTkButton(self.navigation_frame)
-        self.scores_button = ctk.CTkButton(self.navigation_frame)
-        self.rankings_button = ctk.CTkButton(self.navigation_frame)
-        self.reports_button = ctk.CTkButton(self.navigation_frame)
+        self.logo = ctk.CTkImage(Image.open(os.path.join("..", "assets", "icons", "logo.jpg")), size=(100, 100))
 
-        self.participants_button.pack()
-        self.events_button.pack()
-        self.scores_button.pack()
-        self.rankings_button.pack()
-        self.reports_button.pack()
+        self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo)
+        self.title_label = ctk.CTkLabel(self.navigation_frame, text="College Event Score\nSystem", font=ctk.CTkFont(size=20, weight="bold"))
+        self.appearance_label = ctk.CTkLabel(self.navigation_frame, text="Appearance:", anchor="w")
+        self.feedback_label = ctk.CTkLabel(self.navigation_frame, text="Submit Feedback", font=("", 13))
+
+        self.logo_label.grid(row=0, column=0, padx=20, pady=(20, 10))
+        self.title_label.grid(row=1, column=0, padx=20, pady=10)
+        self.appearance_label.grid(row=7, column=0, padx=20, pady=(10, 0))
+        self.feedback_label.grid(row=9, column=0)
+
+        self.appearance_optionmenu = ctk.CTkOptionMenu(self.navigation_frame, values=["Light", "Dark", "System"], command=self.appearance)
+
+        self.appearance_optionmenu.grid(row=8, column=0, padx=20, pady=(10, 20))
+
+        self.participants_button = ctk.CTkButton(self.navigation_frame, text="Participants", command=self.participants)
+        self.events_button = ctk.CTkButton(self.navigation_frame, text="Events", command=self.events)
+        self.scores_button = ctk.CTkButton(self.navigation_frame, text="Scores", command=self.scores)
+        self.rankings_button = ctk.CTkButton(self.navigation_frame, text="Rankings", command=self.rankings)
+        self.reports_button = ctk.CTkButton(self.navigation_frame, text="Reports", command=self.reports)
+
+        self.participants_button.grid(row=2, column=0, padx=20, pady=10)
+        self.events_button.grid(row=3, column=0, padx=20, pady=10)
+        self.scores_button.grid(row=4, column=0, padx=20, pady=10)
+        self.rankings_button.grid(row=5, column=0, padx=20, pady=10)
+        self.reports_button.grid(row=6, column=0, padx=20, pady=10)
+
+        self.feedback_label.bind("<Button-1>", lambda event: self.feedback_form())
+        self.feedback_label.bind("<Enter>", lambda event: self.feedback_label.configure(font=("", 13, "underline"), cursor="hand2"))
+        self.feedback_label.bind("<Leave>", lambda event: self.feedback_label.configure(font=("", 13), cursor="arrow"))
+
+    def appearance(self, appearance: str):
+        pass
+
+    def participants(self):
+        pass
+
+    def events(self):
+        pass
+
+    def scores(self):
+        pass
+
+    def rankings(self):
+        pass
+
+    def reports(self):
+        pass
+
+    def feedback_form(self):
+        pass
+
 
 if __name__ == "__main__":
     app = App()
