@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added feedback form (full">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
       <change afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +57,7 @@
   "keyToString": {
     "Python.College Event Score System.executor": "Run",
     "Python.config.executor": "Run",
+    "Python.login.executor": "Run",
     "Python.main (1).executor": "Run",
     "Python.main.executor": "Run",
     "Python.rankings.executor": "Run",
@@ -355,7 +362,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721572266628</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Updated feedback (closes toplevel when submitted sucessfully (textbox not null">
+      <option name="closed" value="true" />
+      <created>1721573558870</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1721573558870</updated>
+    </task>
+    <task id="LOCAL-00033" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721573623024</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1721573623024</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -390,8 +413,9 @@
     <MESSAGE value="Finished navigation looks" />
     <MESSAGE value="Added tempory logo" />
     <MESSAGE value="Added CTkMessagebox" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added feedback form (full" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added feedback form (full" />
+    <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
