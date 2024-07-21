@@ -5,58 +5,32 @@ from PIL import Image
 import os
 import webbrowser
 import urllib.parse
-from utils.file import save, restore_latest, restore_custom
-from utils.edit import add_record, update_record, delete_record
-from utils.settings import logout, colour_scheme, scale
-from utils.about import website, github, description
+from gui.events import Events
+from gui.participants import Participants
+from gui.rankings import Rankings
+from gui.reports import Reports
+from gui.scores import Scores
 
 
-class App(ctk.CTk):
-    def __init__(self):
-        super().__init__()
+class Main:
+    def __init__(self, app):
+        self.app = app
 
-        self.title("College Event Score System")
-        self.geometry(f"{1000}x{580}")
-        self.bind("<1>", lambda event: event.widget.focus_set())
+        self.events = Events(self)
+        self.participants = Participants(self)
+        self.rankings = Rankings(self)
+        self.reports = Reports(self)
+        self.scores = Scores(self)
 
-        self.grid_columnconfigure(1, weight=1)
-        self.grid_columnconfigure((2, 3), weight=0)
-        self.grid_rowconfigure((0, 1, 2), weight=1)
-
-        self.title_menu = ctkmb.CTkTitleMenu(self)
-
-        self.file_button = self.title_menu.add_cascade("File", fg_color="transparent")
-        self.edit_button = self.title_menu.add_cascade("Edit", fg_color="transparent")
-        self.settings_button = self.title_menu.add_cascade("Settings", fg_color="transparent")
-        self.about_button = self.title_menu.add_cascade("About", fg_color="transparent")
-
-        self.file_dropdown = ctkmb.CustomDropdownMenu(widget=self.file_button)
-        self.file_dropdown.add_option(option="Save", command=save)
-
-        self.file_sub_menu = self.file_dropdown.add_submenu("Open")
-        self.file_sub_menu.add_option(option="Restore Latest", command=restore_latest)
-        self.file_sub_menu.add_option(option="Restore Custom", command=restore_custom)
-
-        self.edit_dropdown = ctkmb.CustomDropdownMenu(widget=self.edit_button)
-        self.edit_dropdown.add_option(option="Add Record", command=add_record)
-        self.edit_dropdown.add_option(option="Update Record", command=update_record)
-        self.edit_dropdown.add_option(option="Delete Record", command=delete_record)
-
-        self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
-        self.settings_dropdown.add_option(option="Logout", command=logout)
-        self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
-        self.settings_dropdown.add_option(option="Scale", command=scale)
-
-        self.about_dropdown = ctkmb.CustomDropdownMenu(widget=self.about_button)
-        self.about_dropdown.add_option(option="Website", command=website)
-        self.about_dropdown.add_option(option="GitHub", command=github)
-        self.about_dropdown.add_option(option="Description", command=description)
-
-        self.navigation_frame = ctk.CTkFrame(self, width=250, corner_radius=0)
+    def load_page(self, frame):
+        self.navigation_frame = ctk.CTkFrame(frame, width=250, corner_radius=0)
         self.navigation_frame.grid(row=0, column=0, rowspan=4, sticky="nsew")
         self.navigation_frame.grid_rowconfigure(4, weight=1)
 
-        self.logo = ctk.CTkImage(Image.open(os.path.join("..", "assets", "icons", "logo.jpg")), size=(100, 100))
+        self.content_frame = ctk.CTkFrame(frame, width=750, corner_radius=0)
+        self.content_frame.grid(row=0, column=1, rowspan=4, sticky="nsew")
+
+        self.logo = ctk.CTkImage(Image.open(os.path.join("assets", "icons", "logo.jpg")), size=(100, 100))
 
         self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo)
         self.title_label = ctk.CTkLabel(self.navigation_frame, text="College Event Score\nSystem", font=ctk.CTkFont(size=20, weight="bold"))
@@ -72,11 +46,11 @@ class App(ctk.CTk):
 
         self.appearance_optionmenu.grid(row=8, column=0, padx=20, pady=(10, 20))
 
-        self.participants_button = ctk.CTkButton(self.navigation_frame, text="Participants", command=self.participants)
-        self.events_button = ctk.CTkButton(self.navigation_frame, text="Events", command=self.events)
-        self.scores_button = ctk.CTkButton(self.navigation_frame, text="Scores", command=self.scores)
-        self.rankings_button = ctk.CTkButton(self.navigation_frame, text="Rankings", command=self.rankings)
-        self.reports_button = ctk.CTkButton(self.navigation_frame, text="Reports", command=self.reports)
+        self.participants_button = ctk.CTkButton(self.navigation_frame, text="Participants", command=self.participant)
+        self.events_button = ctk.CTkButton(self.navigation_frame, text="Events", command=self.event)
+        self.scores_button = ctk.CTkButton(self.navigation_frame, text="Scores", command=self.score)
+        self.rankings_button = ctk.CTkButton(self.navigation_frame, text="Rankings", command=self.ranking)
+        self.reports_button = ctk.CTkButton(self.navigation_frame, text="Reports", command=self.report)
 
         self.participants_button.grid(row=2, column=0, padx=20, pady=10)
         self.events_button.grid(row=3, column=0, padx=20, pady=10)
@@ -91,20 +65,29 @@ class App(ctk.CTk):
     def appearance(self, appearance: str):
         pass
 
-    def participants(self):
-        pass
+    def clear(self, frame):
+        for widget in frame.winfo_children():
+            widget.destroy()
 
-    def events(self):
-        pass
+    def participant(self):
+        self.clear(self.content_frame)
+        self.participants.load_page(self.content_frame)
 
-    def scores(self):
-        pass
+    def event(self):
+        self.clear(self.content_frame)
+        self.events.load_page(self.content_frame)
 
-    def rankings(self):
-        pass
+    def score(self):
+        self.clear(self.content_frame)
+        self.scores.load_page(self.content_frame)
 
-    def reports(self):
-        pass
+    def ranking(self):
+        self.clear(self.content_frame)
+        self.rankings.load_page(self.content_frame)
+
+    def report(self):
+        self.clear(self.content_frame)
+        self.reports.load_page(self.content_frame)
 
     def feedback(self):
 
