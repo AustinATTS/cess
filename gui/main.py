@@ -1,7 +1,10 @@
 import customtkinter as ctk
 import CTkMenuBar as ctkmb
+import CTkMessagebox as ctkm
 from PIL import Image
 import os
+import webbrowser
+import urllib.parse
 from utils.file import save, restore_latest, restore_custom
 from utils.edit import add_record, update_record, delete_record
 from utils.settings import logout, colour_scheme, scale
@@ -81,7 +84,7 @@ class App(ctk.CTk):
         self.rankings_button.grid(row=5, column=0, padx=20, pady=10)
         self.reports_button.grid(row=6, column=0, padx=20, pady=10)
 
-        self.feedback_label.bind("<Button-1>", lambda event: self.feedback_form())
+        self.feedback_label.bind("<Button-1>", lambda event: self.feedback())
         self.feedback_label.bind("<Enter>", lambda event: self.feedback_label.configure(font=("", 13, "underline"), cursor="hand2"))
         self.feedback_label.bind("<Leave>", lambda event: self.feedback_label.configure(font=("", 13), cursor="arrow"))
 
@@ -103,8 +106,44 @@ class App(ctk.CTk):
     def reports(self):
         pass
 
-    def feedback_form(self):
-        pass
+    def feedback(self):
+
+        def submit():
+            email = "CollegeEventScoreSystem@austinatts.co.uk"
+            subject = subject_textbox.get("1.0", "end-1c")
+            feedback = feedback_textbox.get("1.0", "end-1c")
+
+            subject_encoded = urllib.parse.quote(subject)
+            feedback_encoded = urllib.parse.quote(feedback)
+
+            mailto_link = f"mailto:{email}?subject={subject_encoded}&body={feedback_encoded}"
+
+            if subject != "" and feedback != "":
+                webbrowser.open(mailto_link)
+            else:
+                ctkm.CTkMessagebox(title="Error", message="Something went wrong!!!", icon="cancel")
+
+        feedback_toplevel = ctk.CTkToplevel()
+        feedback_toplevel.title("Feedback Form")
+        feedback_toplevel.geometry(f"{350}x{312}")
+
+        title_label = ctk.CTkLabel(feedback_toplevel, text="Feedback Form", font=ctk.CTkFont(size=20, weight="bold"))
+        subject_label = ctk.CTkLabel(feedback_toplevel, text="Subject", anchor="w")
+        feedback_label = ctk.CTkLabel(feedback_toplevel, text="Feedback", anchor="w")
+
+        title_label.grid(row=0, column=0, padx=60, pady=(20, 0))
+        subject_label.grid(row=1, column=0, padx=60, pady=(10, 0))
+        feedback_label.grid(row=3, column=0, padx=60, pady=(10, 0))
+
+        subject_textbox = ctk.CTkTextbox(feedback_toplevel, width=230, height=50)
+        feedback_textbox = ctk.CTkTextbox(feedback_toplevel, width=230, height=50)
+
+        subject_textbox.grid(row=2, column=0, padx=60, pady=10, sticky="nsew")
+        feedback_textbox.grid(row=4, column=0, padx=60, pady=10, sticky="nsew")
+
+        submit_button = ctk.CTkButton(feedback_toplevel, text="Submit", command=submit)
+
+        submit_button.grid(row=5, column=0, padx=60, pady=(0, 20))
 
 
 if __name__ == "__main__":
