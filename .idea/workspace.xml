@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Updated login to add looks">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +65,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -79,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/gui" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gui/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/College Event Score System.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -94,7 +89,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python.College Event Score System" />
       </list>
     </recent_temporary>
   </component>
@@ -378,7 +373,71 @@
       <option name="project" value="LOCAL" />
       <updated>1721573623024</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Moved main frame into new file (easier login mechancs)">
+      <option name="closed" value="true" />
+      <created>1721585108303</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585108303</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Created a basic class structure">
+      <option name="closed" value="true" />
+      <created>1721585128213</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585128213</updated>
+    </task>
+    <task id="LOCAL-00036" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721585134651</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585134651</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Removed the frame setup and is now navigation and content main page">
+      <option name="closed" value="true" />
+      <created>1721585170641</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585170641</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Added basic class structure, provided need to login before accessing main content">
+      <option name="closed" value="true" />
+      <created>1721585198008</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585198008</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Changed logout function to CESS file">
+      <option name="closed" value="true" />
+      <created>1721585304566</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1721585304566</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Updated hover on title bar to look good">
+      <option name="closed" value="true" />
+      <created>1721597828620</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1721597828620</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Updated login to add looks">
+      <option name="closed" value="true" />
+      <created>1721597847019</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1721597847020</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -393,11 +452,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created Database" />
-    <MESSAGE value="Created Package" />
-    <MESSAGE value="Created files" />
-    <MESSAGE value="Added TitleBar" />
-    <MESSAGE value="added customtkinter and CTkMenuBar" />
     <MESSAGE value="Updated Directory name and added crude navigation pane" />
     <MESSAGE value="Added functions Website, Github and basic for descirption" />
     <MESSAGE value="Imported new functions" />
@@ -415,7 +469,14 @@
     <MESSAGE value="Added CTkMessagebox" />
     <MESSAGE value="Added feedback form (full" />
     <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
+    <MESSAGE value="Moved main frame into new file (easier login mechancs)" />
+    <MESSAGE value="Created a basic class structure" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Removed the frame setup and is now navigation and content main page" />
+    <MESSAGE value="Added basic class structure, provided need to login before accessing main content" />
+    <MESSAGE value="Changed logout function to CESS file" />
+    <MESSAGE value="Updated hover on title bar to look good" />
+    <MESSAGE value="Updated login to add looks" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated login to add looks" />
   </component>
 </project>
