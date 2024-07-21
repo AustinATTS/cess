@@ -31,6 +31,8 @@ Updates:
 
 v0.0.1 - Created College Event Score System
 
+v0.0.2 - Login and Navigation
+
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
 
