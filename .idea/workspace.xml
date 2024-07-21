@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added spacing">
+      <change afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/admin/general.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/config.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/judge/general.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings/viewer/general.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +49,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.rankings.executor": "Run",
+    "Python.reports.executor": "Run",
+    "Python.scores.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
@@ -268,8 +267,51 @@
       <option name="project" value="LOCAL" />
       <updated>1721476299916</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721483765096</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1721483765096</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Removed as unnecessary">
+      <option name="closed" value="true" />
+      <created>1721483823321</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1721483823321</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Updated">
+      <option name="closed" value="true" />
+      <created>1721483830082</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1721483830082</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Added spacing">
+      <option name="closed" value="true" />
+      <created>1721483848987</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1721483848987</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created Database" />
@@ -286,6 +328,9 @@
     <MESSAGE value="added gitignore" />
     <MESSAGE value="Created README.md taking very heavy inspiration from Lucas Miltiadou (https://github.com/MiltzJrr)" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Removed as unnecessary" />
+    <MESSAGE value="Updated" />
+    <MESSAGE value="Added spacing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added spacing" />
   </component>
 </project>
