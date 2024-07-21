@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Updated login to add looks">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -437,7 +436,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721597847020</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="readded logout(dont know what to do with it yet">
+      <option name="closed" value="true" />
+      <created>1721598636033</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1721598636033</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Spacing">
+      <option name="closed" value="true" />
+      <created>1721598685450</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1721598685450</updated>
+    </task>
+    <task id="LOCAL-00044" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721598692508</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1721598692508</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -452,8 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated Directory name and added crude navigation pane" />
-    <MESSAGE value="Added functions Website, Github and basic for descirption" />
     <MESSAGE value="Imported new functions" />
     <MESSAGE value="added webbrowser" />
     <MESSAGE value="Added basic frame for the title functions" />
@@ -471,12 +492,14 @@
     <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
     <MESSAGE value="Moved main frame into new file (easier login mechancs)" />
     <MESSAGE value="Created a basic class structure" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Removed the frame setup and is now navigation and content main page" />
     <MESSAGE value="Added basic class structure, provided need to login before accessing main content" />
     <MESSAGE value="Changed logout function to CESS file" />
     <MESSAGE value="Updated hover on title bar to look good" />
     <MESSAGE value="Updated login to add looks" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated login to add looks" />
+    <MESSAGE value="readded logout(dont know what to do with it yet" />
+    <MESSAGE value="Spacing" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
