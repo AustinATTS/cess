@@ -3,8 +3,9 @@ import CTkMenuBar as ctkmb
 from gui.login import Login
 from utils.file import save, restore_latest, restore_custom
 from utils.edit import add_record, update_record, delete_record
-from utils.settings import colour_scheme, scale
+from utils.settings import colour_scheme, scale, logout
 from utils.about import website, github, description
+
 
 class App(ctk.CTk):
     def __init__(self):
@@ -39,6 +40,7 @@ class App(ctk.CTk):
         self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
         self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
         self.settings_dropdown.add_option(option="Scale", command=scale)
+        self.settings_dropdown.add_option(option="Logout", command=logout)
 
         self.about_dropdown = ctkmb.CustomDropdownMenu(widget=self.about_button)
         self.about_dropdown.add_option(option="Website", command=website)
@@ -48,6 +50,7 @@ class App(ctk.CTk):
         self.login = Login(self)
 
         self.login.load_page(self)
+
 
 if __name__ == "__main__":
     app = App()
