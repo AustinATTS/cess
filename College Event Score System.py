@@ -3,7 +3,7 @@ import CTkMenuBar as ctkmb
 from gui.login import Login
 from utils.file import save, restore_latest, restore_custom
 from utils.edit import add_record, update_record, delete_record
-from utils.settings import logout, colour_scheme, scale
+from utils.settings import colour_scheme, scale
 from utils.about import website, github, description
 
 class App(ctk.CTk):
@@ -11,8 +11,7 @@ class App(ctk.CTk):
         super().__init__()
 
         self.title("College Event Score System")
-        self.geometry(f"{1000}x{580}")
-        self.bind("<1>", lambda event: event.widget.focus_set())
+        self.geometry(f"{350}x{312}")
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -20,10 +19,10 @@ class App(ctk.CTk):
 
         self.title_menu = ctkmb.CTkTitleMenu(self)
 
-        self.file_button = self.title_menu.add_cascade("File", fg_color="transparent")
-        self.edit_button = self.title_menu.add_cascade("Edit", fg_color="transparent")
-        self.settings_button = self.title_menu.add_cascade("Settings", fg_color="transparent")
-        self.about_button = self.title_menu.add_cascade("About", fg_color="transparent")
+        self.file_button = self.title_menu.add_cascade("File", fg_color="transparent", hover_color="#CCCCCC")
+        self.edit_button = self.title_menu.add_cascade("Edit", fg_color="transparent", hover_color="#CCCCCC")
+        self.settings_button = self.title_menu.add_cascade("Settings", fg_color="transparent", hover_color="#CCCCCC")
+        self.about_button = self.title_menu.add_cascade("About", fg_color="transparent", hover_color="#CCCCCC")
 
         self.file_dropdown = ctkmb.CustomDropdownMenu(widget=self.file_button)
         self.file_dropdown.add_option(option="Save", command=save)
@@ -38,7 +37,6 @@ class App(ctk.CTk):
         self.edit_dropdown.add_option(option="Delete Record", command=delete_record)
 
         self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
-        self.settings_dropdown.add_option(option="Logout", command=logout)
         self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
         self.settings_dropdown.add_option(option="Scale", command=scale)
 
