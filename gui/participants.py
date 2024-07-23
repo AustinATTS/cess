@@ -75,3 +75,87 @@ class Participants:
         self.participant_listbox.grid(row=4, column=0, padx=20, pady=10)
 
         self.refresh_listbox()
+
+    def get_participants(self):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT * FROM participants")
+        rows = cursor.fetchall()
+        conn.close()
+        return rows
+
+    def add_participant(self, name, email, phone, team):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO participants (name, email, phone, team_id) VALUES (?, ?, ?, ?)",
+                       (name, email, phone, team))
+        conn.commit()
+        conn.close()
+
+    def update_participant(self, participant_id, name, email, phone, team):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("UPDATE participants SET name=?, email=?, phone=?, team_id=? WHERE id=?",
+                       (name, email, phone, team, participant_id))
+        conn.commit()
+        conn.close()
+
+    def delete_participant(self, participant_id):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("DELETE FROM participants WHERE id=?", (participant_id,))
+        conn.commit()
+        conn.close()
+
+    def update_entry_fields(self, event):
+        selected_item = self.participant_listbox.get(self.participant_listbox.curselection())
+        participant_id, name, email, phone, team = selected_item.split(" | ")
+
+        self.id_entry.delete(0, ctk.END)
+        self.id_entry.insert(0, participant_id)
+
+        self.name_entry.delete(0, ctk.END)
+        self.name_entry.insert(0, name)
+
+        self.email_entry.delete(0, ctk.END)
+        self.email_entry.insert(0, email)
+
+        self.phone_entry.delete(0, ctk.END)
+        self.phone_entry.insert(0, phone)
+
+        self.team_entry.delete(0, ctk.END)
+        self.team_entry.insert(0, team)
+
+    def refresh_listbox(self):
+        self.participant_listbox.delete(0, ctk.END)
+        for row in self.get_participants():
+            self.participant_listbox.insert(ctk.END, " | ".join(map(str, row)))
+
+    def clear_entry_fields(self):
+        self.id_entry.delete(0, ctk.END)
+        self.name_entry.delete(0, ctk.END)
+        self.email_entry.delete(0, ctk.END)
+        self.phone_entry.delete(0, ctk.END)
+        self.team_entry.delete(0, ctk.END)
+
+    def add_or_update_participant(self):
+        participant_id = self.id_entry.get()
+        name = self.name_entry.get()
+        email = self.email_entry.get()
+        phone = self.phone_entry.get()
+        team = self.team_entry.get()
+
+        if participant_id:
+            self.update_participant(participant_id, name, email, phone, team)
+        else:
+            self.add_participant(name, email, phone, team)
+
+        self.refresh_listbox()
+        self.clear_entry_fields()
+
+    def delete_selected_participant(self):
+        participant_id = self.id_entry.get()
+        if participant_id:
+            self.delete_participant(participant_id)
+            self.refresh_listbox()
+            self.clear_entry_fields()
