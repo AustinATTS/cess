@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Created database">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +53,7 @@
   &quot;keyToString&quot;: {
     &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
     &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
     &quot;Python.login.executor&quot;: &quot;Run&quot;,
     &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
     &quot;Python.main.executor&quot;: &quot;Run&quot;,
@@ -63,7 +66,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.College Event Score System">
     <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
       <option name="ENV_FILES" value="" />
@@ -86,9 +89,32 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cess" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.College Event Score System" />
+        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -107,38 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00004" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721423119784</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1721423119784</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Created files">
-      <option name="closed" value="true" />
-      <created>1721423129955</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1721423129955</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Added TitleBar">
-      <option name="closed" value="true" />
-      <created>1721426353451</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1721426353451</updated>
-    </task>
-    <task id="LOCAL-00007" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721426363484</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1721426363484</updated>
     </task>
     <task id="LOCAL-00008" summary="added customtkinter and CTkMenuBar">
       <option name="closed" value="true" />
@@ -500,7 +494,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721731346769</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721746525504</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1721746525505</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Created database tables">
+      <option name="closed" value="true" />
+      <created>1721746538201</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1721746538202</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Created the database">
+      <option name="closed" value="true" />
+      <created>1721746559444</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1721746559444</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Created database">
+      <option name="closed" value="true" />
+      <created>1721746576112</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1721746576112</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -515,9 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Imported title functions" />
-    <MESSAGE value="added gitignore" />
-    <MESSAGE value="Created README.md taking very heavy inspiration from Lucas Miltiadou (https://github.com/MiltzJrr)" />
     <MESSAGE value="Removed as unnecessary" />
     <MESSAGE value="Updated" />
     <MESSAGE value="Added spacing" />
@@ -540,6 +563,9 @@
     <MESSAGE value="Created file" />
     <MESSAGE value="Added new version" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Created database tables" />
+    <MESSAGE value="Created the database" />
+    <MESSAGE value="Created database" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created database" />
   </component>
 </project>
