@@ -1,7 +1,9 @@
 import customtkinter as ctk
 import CTkListbox as ctkl
+import CTkMessagebox as ctkm
 from utils.database import get_db
 import time
+
 
 class Scores:
     def __init__(self, app):
@@ -46,26 +48,26 @@ class Scores:
         self.score_label.grid(row=0, column=3, padx=10, pady=10)
         self.date_label.grid(row=0, column=4, padx=(10, 20), pady=10)
 
-        self.id_entry = ctk.CTkEntry(self.entry_frame, width=120, placeholder_text="Leave for New", )
-        self.participant_entry = ctk.CTkEntry(self.entry_frame, width=120)
-        self.event_entry = ctk.CTkEntry(self.entry_frame, width=120)
+        self.id_entry = ctk.CTkEntry(self.entry_frame, width=120, placeholder_text="Leave for New")
+        self.participant_combo = ctk.CTkComboBox(self.entry_frame, width=120)
+        self.event_combo = ctk.CTkComboBox(self.entry_frame, width=120)
         self.score_entry = ctk.CTkEntry(self.entry_frame, width=120)
         self.date_entry = ctk.CTkEntry(self.entry_frame, width=120)
 
         self.id_entry.grid_propagate(False)
-        self.participant_entry.grid_propagate(False)
-        self.event_entry.grid_propagate(False)
+        self.participant_combo.grid_propagate(False)
+        self.event_combo.grid_propagate(False)
         self.score_entry.grid_propagate(False)
         self.date_entry.grid_propagate(False)
 
         self.id_entry.grid(row=1, column=0, padx=(20, 10), pady=10)
-        self.participant_entry.grid(row=1, column=1, padx=10, pady=10)
-        self.event_entry.grid(row=1, column=2, padx=10, pady=10)
+        self.participant_combo.grid(row=1, column=1, padx=10, pady=10)
+        self.event_combo.grid(row=1, column=2, padx=10, pady=10)
         self.score_entry.grid(row=1, column=3, padx=10, pady=10)
         self.date_entry.grid(row=1, column=4, padx=(10, 20), pady=10)
 
-        self.add_update_button = ctk.CTkButton(self.button_frame, text="Add/Update",
-                                               command=self.add_or_update_score, width=331)
+        self.add_update_button = ctk.CTkButton(self.button_frame, text="Add/Update", command=self.add_or_update_score,
+                                               width=331)
         self.delete_button = ctk.CTkButton(self.button_frame, text="Delete", command=self.delete_selected_score,
                                            width=331)
 
@@ -78,6 +80,7 @@ class Scores:
         self.score_listbox.grid(row=4, column=0, padx=20, pady=10)
 
         self.refresh_listbox()
+        self.populate_comboboxes()
 
     def get_scores(self):
         conn = get_db()
@@ -87,19 +90,35 @@ class Scores:
         conn.close()
         return rows
 
-    def add_score(self, participant, event, score, date):
+    def get_participants(self):
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO scores (participant, event, score, date) VALUES (?, ?, ?, ?)",
-                       (participant, event, score, date))
+        cursor.execute("SELECT id, name FROM participants")
+        rows = cursor.fetchall()
+        conn.close()
+        return rows
+
+    def get_events(self):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT id, name FROM events")
+        rows = cursor.fetchall()
+        conn.close()
+        return rows
+
+    def add_score(self, participant_id, event_id, score, date):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("INSERT INTO scores (participant_id, event_id, score, date) VALUES (?, ?, ?, ?)",
+                       (participant_id, event_id, score, date))
         conn.commit()
         conn.close()
 
-    def update_score(self, score_id, participant, event, score, date):
+    def update_score(self, score_id, participant_id, event_id, score, date):
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("UPDATE scores SET participant=?, event=?, score=?, date=? WHERE id=?",
-                       (participant, event, score, date, score_id))
+        cursor.execute("UPDATE scores SET participant_id=?, event_id=?, score=?, date=? WHERE id=?",
+                       (participant_id, event_id, score, date, score_id))
         conn.commit()
         conn.close()
 
@@ -110,16 +129,20 @@ class Scores:
         conn.commit()
         conn.close()
 
-    def update_entry_fields(self, score):
+    def update_entry_fields(self, event):
         selected_item = self.score_listbox.get(self.score_listbox.curselection())
-        score_id, participant, event, score, date = selected_item.split(" | ")
+        score_id, participant_id, event_id, score, date = selected_item.split(" | ")
 
-        self.clear_entry_fields()
-
+        self.id_entry.delete(0, ctk.END)
         self.id_entry.insert(0, score_id)
-        self.participant_entry.insert(0, participant)
-        self.event_entry.insert(0, event)
+
+        self.participant_combo.set(participant_id)
+        self.event_combo.set(event_id)
+
+        self.score_entry.delete(0, ctk.END)
         self.score_entry.insert(0, score)
+
+        self.date_entry.delete(0, ctk.END)
         self.date_entry.insert(0, date)
 
     def refresh_listbox(self):
@@ -129,8 +152,8 @@ class Scores:
 
     def clear_entry_fields(self):
         self.id_entry.delete(0, ctk.END)
-        self.participant_entry.delete(0, ctk.END)
-        self.event_entry.delete(0, ctk.END)
+        self.participant_combo.set("")
+        self.event_combo.set("")
         self.score_entry.delete(0, ctk.END)
         self.date_entry.delete(0, ctk.END)
 
@@ -141,18 +164,32 @@ class Scores:
         self.last_button_press_time = current_time
         return True
 
+    def populate_comboboxes(self):
+        participants = self.get_participants()
+        self.participant_combo.configure(values=[f"{id} - {name}" for id, name in participants])
+
+        events = self.get_events()
+        self.event_combo.configure(values=[f"{id} - {name}" for id, name in events])
+
+        self.participant_combo.set("")
+        self.event_combo.set("")
+
     def add_or_update_score(self):
         if not self.debounce():
             return
         score_id = self.id_entry.get()
-        participant = self.participant_entry.get()
-        event = self.event_entry.get()
+        participant = self.participant_combo.get()
+        event = self.event_combo.get()
         score = self.score_entry.get()
+        date = self.date_entry.get()
+
+        participant_id = participant.split(" - ")[0]
+        event_id = event.split(" - ")[0]
 
         if score_id:
-            self.update_score(score_id, participant, event, score, date)
+            self.update_score(score_id, participant_id, event_id, score, date)
         else:
-            self.add_score(participant, event, score, date)
+            self.add_score(participant_id, event_id, score, date)
 
         self.refresh_listbox()
         self.clear_entry_fields()
