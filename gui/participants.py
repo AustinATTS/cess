@@ -2,11 +2,14 @@ import sqlite3
 import customtkinter as ctk
 import CTkListbox as ctkl
 from utils.database import get_db
+import time
 
 
 class Participants:
     def __init__(self, app):
         self.app = app
+        self.last_button_press_time = 0
+        self.button_press_interval = 2.0
 
     def load_page(self, frame):
         self.title_frame = ctk.CTkFrame(frame, width=722, height=48)
@@ -138,7 +141,16 @@ class Participants:
         self.phone_entry.delete(0, ctk.END)
         self.team_entry.delete(0, ctk.END)
 
+    def debounce(self):
+        current_time = time.time()
+        if current_time - self.last_button_press_time < self.button_press_interval:
+            return False
+        self.last_button_press_time = current_time
+        return True
+
     def add_or_update_participant(self):
+        if not self.debounce():
+            return
         participant_id = self.id_entry.get()
         name = self.name_entry.get()
         email = self.email_entry.get()
@@ -154,6 +166,8 @@ class Participants:
         self.clear_entry_fields()
 
     def delete_selected_participant(self):
+        if not self.debounce():
+            return
         participant_id = self.id_entry.get()
         if participant_id:
             self.delete_participant(participant_id)
