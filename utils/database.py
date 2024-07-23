@@ -11,6 +11,7 @@ def get_db():
         ctkm.CTkMessagebox(title="Error", message=f"SQLite error: {e}", icon="cancel")
         raise
 
+
 def init_db():
     conn = get_db()
     cursor = conn.cursor()
@@ -51,8 +52,16 @@ def init_db():
                         name TEXT,
                         date TEXT,
                         details TEXT)''')
+
+    # Ensure teams are initialized
+    for team_id, team_name, member_count in [(1, 'Team 1', 0), (2, 'Team 2', 0), (3, 'Team 3', 0), (4, 'Team 4', 0),
+                                             (5, 'Team 5', 0)]:
+        cursor.execute("INSERT OR IGNORE INTO teams (id, name, member_count) VALUES (?, ?, ?)",
+                       (team_id, team_name, member_count))
+
     conn.commit()
     conn.close()
+
 
 if __name__ == "__main__":
     init_db()
