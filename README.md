@@ -38,6 +38,10 @@ v0.1.1 - Reduced Button Spamming
 v0.1.2 - ID Indicator
 v0.1.3 - Team Validation
 
+v0.2.0 - Events
+
+v0.3.0 - Scores
+
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
 
