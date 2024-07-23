@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added a timer to reduce button presses">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,30 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00018" summary="added gitignore">
-      <option name="closed" value="true" />
-      <created>1721476065622</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1721476065622</updated>
-    </task>
-    <task id="LOCAL-00019" summary="Created README.md taking very heavy inspiration from Lucas Miltiadou (https://github.com/MiltzJrr)">
-      <option name="closed" value="true" />
-      <created>1721476289859</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1721476289859</updated>
-    </task>
-    <task id="LOCAL-00020" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721476299916</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1721476299916</updated>
     </task>
     <task id="LOCAL-00021" summary=".idea">
       <option name="closed" value="true" />
@@ -524,7 +502,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721763740308</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="Added v0.1.0">
+      <option name="closed" value="true" />
+      <created>1721764196770</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1721764196770</updated>
+    </task>
+    <task id="LOCAL-00068" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721764205836</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1721764205836</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Added a timer to reduce button presses">
+      <option name="closed" value="true" />
+      <created>1721765737853</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1721765737853</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -539,8 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added CTkMessagebox" />
-    <MESSAGE value="Added feedback form (full" />
     <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
     <MESSAGE value="Moved main frame into new file (easier login mechancs)" />
     <MESSAGE value="Created a basic class structure" />
@@ -563,7 +563,9 @@
     <MESSAGE value="Created the look for participants and placed function markers" />
     <MESSAGE value="Created functions (Working, no known errors" />
     <MESSAGE value="Added random data" />
+    <MESSAGE value="Added v0.1.0" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Added a timer to reduce button presses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a timer to reduce button presses" />
   </component>
 </project>
