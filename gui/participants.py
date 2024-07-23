@@ -1,5 +1,3 @@
-import _tkinter
-import sqlite3
 import customtkinter as ctk
 import CTkListbox as ctkl
 import CTkMessagebox as ctkm
@@ -107,8 +105,6 @@ class Participants:
     def update_participant(self, participant_id, name, email, phone, team):
         conn = get_db()
         cursor = conn.cursor()
-
-        # Get old team_id
         cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
         old_team = cursor.fetchone()[0]
 
