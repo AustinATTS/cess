@@ -25,7 +25,7 @@ class Events:
         self.button_frame.grid(row=2, column=0, padx=20, pady=0)
         self.listbox_frame.grid(row=3, column=0, padx=20, pady=0)
 
-        self.title_label = ctk.CTkLabel(self.title_frame, text="Participants", width=682)
+        self.title_label = ctk.CTkLabel(self.title_frame, text="Events", width=682)
         self.id_label = ctk.CTkLabel(self.entry_frame, text="ID", width=120)
         self.name_label = ctk.CTkLabel(self.entry_frame, text="Name", width=120)
         self.type_label = ctk.CTkLabel(self.entry_frame, text="Type", width=120)
