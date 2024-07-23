@@ -1,6 +1,7 @@
 import customtkinter as ctk
 import CTkMenuBar as ctkmb
 from gui.login import Login
+import CTkMessagebox as ctkm
 from utils.file import save, restore_latest, restore_custom
 from utils.edit import add_record, update_record, delete_record
 from utils.settings import colour_scheme, scale, logout
@@ -53,5 +54,8 @@ class App(ctk.CTk):
 
 
 if __name__ == "__main__":
-    app = App()
-    app.mainloop()
+    try:
+        app = App()
+        app.mainloop()
+    except Exception as e:
+        ctkm.CTkMessagebox(title="Error", message=f"There is an error\ne", icon="cancel")
