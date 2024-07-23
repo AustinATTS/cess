@@ -109,8 +109,28 @@ class Scores:
     def add_score(self, participant_id, event_id, score, date):
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("INSERT INTO scores (participant_id, event_id, score, date) VALUES (?, ?, ?, ?)",
-                       (participant_id, event_id, score, date))
+        cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
+        team_id = cursor.fetchone()[0]
+
+        if team_id == 1:
+            cursor.execute("SELECT COUNT(*) FROM scores WHERE participant_id = ?", (participant_id,))
+            event_count = cursor.fetchone()[0]
+            if event_count >= 5:
+                ctkm.CTkMessagebox(title="Error", message="Participant in Team 1 cannot attend more than 5 events",
+                                   icon="cancel")
+                conn.close()
+                return
+
+            cursor.execute("INSERT INTO scores (participant_id, event_id, score, date, team_id) VALUES (?, ?, ?, ?, ?)",
+                           (participant_id, event_id, score, date, team_id))
+        else:
+            cursor.execute("SELECT id FROM participants WHERE team_id = ?", (team_id,))
+            team_members = cursor.fetchall()
+            for member in team_members:
+                cursor.execute(
+                    "INSERT OR IGNORE INTO scores (participant_id, event_id, score, date, team_id) VALUES (?, ?, ?, ?, ?)",
+                    (member[0], event_id, score, date, team_id))
+
         conn.commit()
         conn.close()
 
