@@ -50,7 +50,7 @@ class Participants:
         self.phone_label.grid(row=0, column=3, padx=10, pady=10)
         self.team_label.grid(row=0, column=4, padx=(10, 20), pady=10)
 
-        self.id_entry = ctk.CTkEntry(self.entry_frame, width=120)
+        self.id_entry = ctk.CTkEntry(self.entry_frame, width=120, placeholder_text="Leave for New", )
         self.name_entry = ctk.CTkEntry(self.entry_frame, width=120)
         self.email_entry = ctk.CTkEntry(self.entry_frame, width=120)
         self.phone_entry = ctk.CTkEntry(self.entry_frame, width=120)
