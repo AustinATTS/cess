@@ -36,6 +36,7 @@ v0.0.3 - Database
 v0.1.0 - Participants
 v0.1.1 - Reduced Button Spamming
 v0.1.2 - ID Indicator
+v0.1.3 - Team Validation
 
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
