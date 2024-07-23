@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,38 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00013" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721475241664</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475241664</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Added basic frame for the title functions">
-      <option name="closed" value="true" />
-      <created>1721475855860</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475855860</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Imported title functions">
-      <option name="closed" value="true" />
-      <created>1721475868110</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475868110</updated>
-    </task>
-    <task id="LOCAL-00016" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721475877576</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475877576</updated>
     </task>
     <task id="LOCAL-00017" summary=".idea">
       <option name="closed" value="true" />
@@ -526,7 +490,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721748589755</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="Created the look for participants and placed function markers">
+      <option name="closed" value="true" />
+      <created>1721763510486</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1721763510486</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Created functions (Working, no known errors">
+      <option name="closed" value="true" />
+      <created>1721763536628</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1721763536628</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Added random data">
+      <option name="closed" value="true" />
+      <created>1721763549190</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1721763549190</updated>
+    </task>
+    <task id="LOCAL-00065" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721763558499</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1721763558499</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,9 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created and Cleared" />
-    <MESSAGE value="Finished navigation looks" />
-    <MESSAGE value="Added tempory logo" />
     <MESSAGE value="Added CTkMessagebox" />
     <MESSAGE value="Added feedback form (full" />
     <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
@@ -565,6 +558,9 @@
     <MESSAGE value="Fixed database_path for use in relation to cess" />
     <MESSAGE value="added generic sign in data (user, judge, admin pass = atts" />
     <MESSAGE value="Added v0.0.3" />
+    <MESSAGE value="Created the look for participants and placed function markers" />
+    <MESSAGE value="Created functions (Working, no known errors" />
+    <MESSAGE value="Added random data" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
