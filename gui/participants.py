@@ -68,8 +68,10 @@ class Participants:
         self.phone_entry.grid(row=1, column=3, padx=10, pady=10)
         self.team_entry.grid(row=1, column=4, padx=(10, 20), pady=10)
 
-        self.add_update_button = ctk.CTkButton(self.button_frame, text="Add/Update", command=self.add_or_update_participant, width=331)
-        self.delete_button = ctk.CTkButton(self.button_frame, text="Delete", command=self.delete_selected_participant, width=331)
+        self.add_update_button = ctk.CTkButton(self.button_frame, text="Add/Update",
+                                               command=self.add_or_update_participant, width=331)
+        self.delete_button = ctk.CTkButton(self.button_frame, text="Delete", command=self.delete_selected_participant,
+                                           width=331)
 
         self.add_update_button.grid(row=0, column=0, padx=(20, 10), pady=20)
         self.delete_button.grid(row=0, column=1, padx=(10, 20), pady=20)
@@ -90,25 +92,50 @@ class Participants:
         return rows
 
     def add_participant(self, name, email, phone, team):
+        if not self.can_add_to_team(team):
+            ctkm.CTkMessagebox(title="Error", message="Cannot add participant. Team is full or invalid.", icon="cancel")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO participants (name, email, phone, team_id) VALUES (?, ?, ?, ?)",
                        (name, email, phone, team))
+        cursor.execute("UPDATE teams SET member_count = member_count + 1 WHERE id = ?", (team,))
         conn.commit()
         conn.close()
 
     def update_participant(self, participant_id, name, email, phone, team):
         conn = get_db()
         cursor = conn.cursor()
+
+        # Get old team_id
+        cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
+        old_team = cursor.fetchone()[0]
+
+        if old_team != team and not self.can_add_to_team(team):
+            ctkm.CTkMessagebox(title="Error", message="Cannot update participant. New team is full or invalid.",
+                               icon="cancel")
+            return
+
         cursor.execute("UPDATE participants SET name=?, email=?, phone=?, team_id=? WHERE id=?",
                        (name, email, phone, team, participant_id))
+
+        if old_team != team:
+            cursor.execute("UPDATE teams SET member_count = member_count - 1 WHERE id = ?", (old_team,))
+            cursor.execute("UPDATE teams SET member_count = member_count + 1 WHERE id = ?", (team,))
+
         conn.commit()
         conn.close()
 
     def delete_participant(self, participant_id):
         conn = get_db()
         cursor = conn.cursor()
+
+        cursor.execute("SELECT team_id FROM participants WHERE id=?", (participant_id,))
+        team = cursor.fetchone()[0]
+
         cursor.execute("DELETE FROM participants WHERE id=?", (participant_id,))
+        cursor.execute("UPDATE teams SET member_count = member_count - 1 WHERE id = ?", (team,))
         conn.commit()
         conn.close()
 
@@ -149,6 +176,22 @@ class Participants:
             return False
         self.last_button_press_time = current_time
         return True
+
+    def can_add_to_team(self, team_id):
+        try:
+            if int(team_id) not in [1, 2, 3, 4, 5]:
+                return False
+        except ValueError as e:
+            ctkm.CTkMessagebox(title="Error", message=f"Please enter a valid Team ID\n{e}", icon="cancel")
+
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT member_count FROM teams WHERE id = ?", (team_id,))
+        member_count = cursor.fetchone()[0]
+        conn.close()
+
+        max_members = 20 if int(team_id) == 1 else 5
+        return member_count < max_members
 
     def add_or_update_participant(self):
         if not self.debounce():
