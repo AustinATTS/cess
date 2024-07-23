@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.1.1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.1.2 and reorganized a bit">
       <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,30 +131,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00027" summary="Finished navigation looks">
-      <option name="closed" value="true" />
-      <created>1721567444959</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1721567444959</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Added tempory logo">
-      <option name="closed" value="true" />
-      <created>1721567456748</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1721567456748</updated>
-    </task>
-    <task id="LOCAL-00029" summary="Added CTkMessagebox">
-      <option name="closed" value="true" />
-      <created>1721572243047</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1721572243047</updated>
     </task>
     <task id="LOCAL-00030" summary=".idea">
       <option name="closed" value="true" />
@@ -526,7 +500,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721767741923</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Added message to indicate keeping ID clear">
+      <option name="closed" value="true" />
+      <created>1721769199751</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1721769199751</updated>
+    </task>
+    <task id="LOCAL-00077" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721769211768</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1721769211768</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Added v0.1.2 and reorganized a bit">
+      <option name="closed" value="true" />
+      <created>1721769429403</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1721769429403</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,8 +539,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added basic class structure, provided need to login before accessing main content" />
-    <MESSAGE value="Changed logout function to CESS file" />
     <MESSAGE value="Updated hover on title bar to look good" />
     <MESSAGE value="Updated login to add looks" />
     <MESSAGE value="readded logout(dont know what to do with it yet" />
@@ -564,8 +560,10 @@
     <MESSAGE value="Added some error handling" />
     <MESSAGE value="Added generic error handling" />
     <MESSAGE value="Test data" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added v0.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added v0.1.1" />
+    <MESSAGE value="Added message to indicate keeping ID clear" />
+    <MESSAGE value=".idea" />
+    <MESSAGE value="Added v0.1.2 and reorganized a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added v0.1.2 and reorganized a bit" />
   </component>
 </project>
