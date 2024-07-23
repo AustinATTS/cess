@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added a timer to reduce button presses">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,38 +129,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00021" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721483765096</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1721483765096</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Removed as unnecessary">
-      <option name="closed" value="true" />
-      <created>1721483823321</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1721483823321</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Updated">
-      <option name="closed" value="true" />
-      <created>1721483830082</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1721483830082</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Added spacing">
-      <option name="closed" value="true" />
-      <created>1721483848987</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1721483848987</updated>
     </task>
     <task id="LOCAL-00025" summary="Created and Cleared">
       <option name="closed" value="true" />
@@ -526,7 +490,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721765737853</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Added some error handling">
+      <option name="closed" value="true" />
+      <created>1721766786592</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1721766786592</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Added generic error handling">
+      <option name="closed" value="true" />
+      <created>1721766798982</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1721766798982</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721766805953</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1721766805953</updated>
+    </task>
+    <task id="LOCAL-00073" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721766816486</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1721766816486</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,9 +537,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated feedback (closes toplevel when submitted sucessfully (textbox not null" />
-    <MESSAGE value="Moved main frame into new file (easier login mechancs)" />
-    <MESSAGE value="Created a basic class structure" />
     <MESSAGE value="Removed the frame setup and is now navigation and content main page" />
     <MESSAGE value="Added basic class structure, provided need to login before accessing main content" />
     <MESSAGE value="Changed logout function to CESS file" />
@@ -564,8 +557,11 @@
     <MESSAGE value="Created functions (Working, no known errors" />
     <MESSAGE value="Added random data" />
     <MESSAGE value="Added v0.1.0" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added a timer to reduce button presses" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a timer to reduce button presses" />
+    <MESSAGE value="Added some error handling" />
+    <MESSAGE value="Added generic error handling" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
