@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -129,22 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Imported new functions">
-      <option name="closed" value="true" />
-      <created>1721475225226</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475225226</updated>
-    </task>
-    <task id="LOCAL-00012" summary="added webbrowser">
-      <option name="closed" value="true" />
-      <created>1721475234533</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1721475234533</updated>
     </task>
     <task id="LOCAL-00013" summary=".idea">
       <option name="closed" value="true" />
@@ -522,7 +510,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721747545040</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="Added v0.0.3">
+      <option name="closed" value="true" />
+      <created>1721748582429</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1721748582429</updated>
+    </task>
+    <task id="LOCAL-00061" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721748589755</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1721748589755</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -537,7 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added spacing" />
     <MESSAGE value="Created and Cleared" />
     <MESSAGE value="Finished navigation looks" />
     <MESSAGE value="Added tempory logo" />
@@ -561,6 +564,7 @@
     <MESSAGE value="Created database" />
     <MESSAGE value="Fixed database_path for use in relation to cess" />
     <MESSAGE value="added generic sign in data (user, judge, admin pass = atts" />
+    <MESSAGE value="Added v0.0.3" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
