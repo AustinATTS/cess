@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.1.3">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Updated title">
+      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,23 +47,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.config.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.College Event Score System.executor": "Run",
+    "Python.config.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.login.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.rankings.executor": "Run",
+    "Python.reports.executor": "Run",
+    "Python.scores.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Python.College Event Score System">
     <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
@@ -133,62 +132,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00037" summary="Removed the frame setup and is now navigation and content main page">
-      <option name="closed" value="true" />
-      <created>1721585170641</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585170641</updated>
-    </task>
-    <task id="LOCAL-00038" summary="Added basic class structure, provided need to login before accessing main content">
-      <option name="closed" value="true" />
-      <created>1721585198008</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585198008</updated>
-    </task>
-    <task id="LOCAL-00039" summary="Changed logout function to CESS file">
-      <option name="closed" value="true" />
-      <created>1721585304566</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585304566</updated>
-    </task>
-    <task id="LOCAL-00040" summary="Updated hover on title bar to look good">
-      <option name="closed" value="true" />
-      <created>1721597828620</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1721597828620</updated>
-    </task>
-    <task id="LOCAL-00041" summary="Updated login to add looks">
-      <option name="closed" value="true" />
-      <created>1721597847019</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1721597847020</updated>
-    </task>
-    <task id="LOCAL-00042" summary="readded logout(dont know what to do with it yet">
-      <option name="closed" value="true" />
-      <created>1721598636033</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1721598636033</updated>
-    </task>
-    <task id="LOCAL-00043" summary="Spacing">
-      <option name="closed" value="true" />
-      <created>1721598685450</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1721598685450</updated>
     </task>
     <task id="LOCAL-00044" summary=".idea">
       <option name="closed" value="true" />
@@ -526,7 +469,63 @@
       <option name="project" value="LOCAL" />
       <updated>1721772185034</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="Cleaned up">
+      <option name="closed" value="true" />
+      <created>1721774379464</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774379464</updated>
+    </task>
+    <task id="LOCAL-00087" summary="Added event management based of the participant management">
+      <option name="closed" value="true" />
+      <created>1721774403129</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774403129</updated>
+    </task>
+    <task id="LOCAL-00088" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721774409593</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774409593</updated>
+    </task>
+    <task id="LOCAL-00089" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721774417322</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774417322</updated>
+    </task>
+    <task id="LOCAL-00090" summary="Added CTkListbox">
+      <option name="closed" value="true" />
+      <created>1721774837345</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774837345</updated>
+    </task>
+    <task id="LOCAL-00091" summary="removed unncessary imports">
+      <option name="closed" value="true" />
+      <created>1721774853731</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1721774853731</updated>
+    </task>
+    <task id="LOCAL-00092" summary="Updated title">
+      <option name="closed" value="true" />
+      <created>1721775386848</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1721775386848</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -541,11 +540,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spacing" />
-    <MESSAGE value="Added authentication" />
-    <MESSAGE value="Created file" />
-    <MESSAGE value="Added new version" />
-    <MESSAGE value="Created database tables" />
     <MESSAGE value="Created the database" />
     <MESSAGE value="Created database" />
     <MESSAGE value="Fixed database_path for use in relation to cess" />
@@ -563,9 +557,14 @@
     <MESSAGE value="Added v0.1.2 and reorganized a bit" />
     <MESSAGE value="Added participant and team management and authentication" />
     <MESSAGE value="Updated database initialization" />
+    <MESSAGE value="Added v0.1.3" />
+    <MESSAGE value="Cleaned up" />
+    <MESSAGE value="Added event management based of the participant management" />
     <MESSAGE value="Test data" />
     <MESSAGE value=".idea" />
-    <MESSAGE value="Added v0.1.3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added v0.1.3" />
+    <MESSAGE value="Added CTkListbox" />
+    <MESSAGE value="removed unncessary imports" />
+    <MESSAGE value="Updated title" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated title" />
   </component>
 </project>
