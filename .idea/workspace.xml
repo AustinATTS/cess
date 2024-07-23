@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.1.3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,46 +133,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Updated feedback (closes toplevel when submitted sucessfully (textbox not null">
-      <option name="closed" value="true" />
-      <created>1721573558870</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1721573558870</updated>
-    </task>
-    <task id="LOCAL-00033" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721573623024</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1721573623024</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Moved main frame into new file (easier login mechancs)">
-      <option name="closed" value="true" />
-      <created>1721585108303</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585108303</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Created a basic class structure">
-      <option name="closed" value="true" />
-      <created>1721585128213</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585128213</updated>
-    </task>
-    <task id="LOCAL-00036" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721585134651</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1721585134651</updated>
     </task>
     <task id="LOCAL-00037" summary="Removed the frame setup and is now navigation and content main page">
       <option name="closed" value="true" />
@@ -527,7 +486,47 @@
       <option name="project" value="LOCAL" />
       <updated>1721769550447</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="Added participant and team management and authentication">
+      <option name="closed" value="true" />
+      <created>1721771942384</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1721771942384</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Updated database initialization">
+      <option name="closed" value="true" />
+      <created>1721771956357</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1721771956357</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721771965940</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1721771965940</updated>
+    </task>
+    <task id="LOCAL-00084" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721771974086</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1721771974086</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Added v0.1.3">
+      <option name="closed" value="true" />
+      <created>1721772185034</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1721772185034</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -542,9 +541,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated hover on title bar to look good" />
-    <MESSAGE value="Updated login to add looks" />
-    <MESSAGE value="readded logout(dont know what to do with it yet" />
     <MESSAGE value="Spacing" />
     <MESSAGE value="Added authentication" />
     <MESSAGE value="Created file" />
@@ -565,8 +561,11 @@
     <MESSAGE value="Added v0.1.1" />
     <MESSAGE value="Added message to indicate keeping ID clear" />
     <MESSAGE value="Added v0.1.2 and reorganized a bit" />
+    <MESSAGE value="Added participant and team management and authentication" />
+    <MESSAGE value="Updated database initialization" />
     <MESSAGE value="Test data" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Added v0.1.3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added v0.1.3" />
   </component>
 </project>
