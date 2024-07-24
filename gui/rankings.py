@@ -27,7 +27,7 @@ class Rankings:
         self.button_frame.grid(row=2, column=0, padx=20, pady=0)
         self.listbox_frame.grid(row=3, column=0, padx=20, pady=0)
 
-        self.title_label = ctk.CTkLabel(self.title_frame, text="Scores", width=682)
+        self.title_label = ctk.CTkLabel(self.title_frame, text="Ranks", width=682)
         self.rank_label = ctk.CTkLabel(self.label_frame, text="Rank", width=120)
         self.participant_label = ctk.CTkLabel(self.label_frame, text="Participant", width=120)
         self.event_label = ctk.CTkLabel(self.label_frame, text="Event", width=120)
