@@ -151,7 +151,7 @@ class Scores:
 
     def update_entry_fields(self, event):
         selected_item = self.score_listbox.get(self.score_listbox.curselection())
-        score_id, participant_id, event_id, score, date = selected_item.split(" | ")
+        score_id, participant_id, event_id, score, date, team_id = selected_item.split(" | ")
 
         self.id_entry.delete(0, ctk.END)
         self.id_entry.insert(0, score_id)
