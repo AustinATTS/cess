@@ -114,14 +114,6 @@
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
     </task>
-    <task id="LOCAL-00089" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721774417322</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1721774417322</updated>
-    </task>
     <task id="LOCAL-00090" summary="Added CTkListbox">
       <option name="closed" value="true" />
       <created>1721774837345</created>
@@ -506,7 +498,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721855434689</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721855539103</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855539103</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
