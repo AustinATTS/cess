@@ -21,7 +21,21 @@ def save():
         ctkm.CTkMessagebox(title="Error", message=f"Failed to save backup: {e}")
 
 def restore_latest():
-    pass
+    try:
+        backup_files = sorted(
+            [f for f in os.listdir(backup_dir) if f.startswith("backup_") and f.endswith(".db")],
+            key=lambda x: os.path.getmtime(os.path.join(backup_dir, x)),
+            reverse=True
+        )
+        if not backup_files:
+            ctkm.CTkMessagebox(title="Warning", message="No backup files found.")
+            return
+
+        latest_backup = os.path.join(backup_dir, backup_files[0])
+        shutil.copyfile(latest_backup, os.path.join("data", "database.db"))
+        ctkm.CTkMessagebox(title="Success", message=f"Restored from latest backup: {latest_backup}")
+    except Exception as e:
+        ctkm.CTkMessagebox(title="Error", message=f"Failed to restore from latest backup: {e}")
 
 
 def restore_custom():
