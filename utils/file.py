@@ -39,4 +39,16 @@ def restore_latest():
 
 
 def restore_custom():
-    pass
+    try:
+        custom_backup = tkf.askopenfilename(
+            title="Select Backup File",
+            initialdir=backup_dir,
+            filetypes=[("Database Files", "*.db")]
+        )
+        if not custom_backup:
+            return
+
+        shutil.copyfile(custom_backup, os.path.join("data", "database.db"))
+        ctkm.CTkMessagebox(title="Success", message=f"Restored from custom backup: {custom_backup}")
+    except Exception as e:
+        ctkm.CTkMessagebox(title="Error", message=f"Failed to restore from custom backup: {e}")
