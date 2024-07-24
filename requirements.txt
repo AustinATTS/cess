@@ -3,3 +3,4 @@ CTkMenuBar~=0.8
 CTkMessagebox~=2.7
 pillow~=10.4.0
 CTkListbox~=1.4
+fpdf~=1.7.2
