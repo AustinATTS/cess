@@ -3,7 +3,7 @@ import CTkMessagebox as ctkm
 import os
 
 def get_db():
-    database_path = os.path.join("..", "data", "database.db")
+    database_path = os.path.join("data", "database.db")
     try:
         conn = sqlite3.connect(database_path)
         return conn
