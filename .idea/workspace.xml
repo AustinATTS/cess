@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added the looks of rankings" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,22 +112,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00070" summary="Added some error handling">
-      <option name="closed" value="true" />
-      <created>1721766786592</created>
-      <option name="number" value="00070" />
-      <option name="presentableId" value="LOCAL-00070" />
-      <option name="project" value="LOCAL" />
-      <updated>1721766786592</updated>
-    </task>
-    <task id="LOCAL-00071" summary="Added generic error handling">
-      <option name="closed" value="true" />
-      <created>1721766798982</created>
-      <option name="number" value="00071" />
-      <option name="presentableId" value="LOCAL-00071" />
-      <option name="project" value="LOCAL" />
-      <updated>1721766798982</updated>
     </task>
     <task id="LOCAL-00072" summary="Test data">
       <option name="closed" value="true" />
@@ -501,7 +489,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721821428821</updated>
     </task>
-    <option name="localTasksCounter" value="119" />
+    <task id="LOCAL-00119" summary="Added v0.4.0">
+      <option name="closed" value="true" />
+      <created>1721821597845</created>
+      <option name="number" value="00119" />
+      <option name="presentableId" value="LOCAL-00119" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821597845</updated>
+    </task>
+    <task id="LOCAL-00120" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721821604160</created>
+      <option name="number" value="00120" />
+      <option name="presentableId" value="LOCAL-00120" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821604160</updated>
+    </task>
+    <option name="localTasksCounter" value="121" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -516,7 +520,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added participant and team management and authentication" />
     <MESSAGE value="Updated database initialization" />
     <MESSAGE value="Added v0.1.3" />
     <MESSAGE value="Cleaned up" />
@@ -539,8 +542,9 @@
     <MESSAGE value="Fixed entry box updating (added team variable" />
     <MESSAGE value="Added v0.3.2" />
     <MESSAGE value="Test data" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added the looks of rankings" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added the looks of rankings" />
+    <MESSAGE value="Added v0.4.0" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
