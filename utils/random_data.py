@@ -3,6 +3,7 @@ import string
 import os
 import sqlite3
 from datetime import datetime, timedelta
+import hashlib
 
 def get_db():
     database_path = os.path.join("..", "data", "database.db")
@@ -101,4 +102,31 @@ def update_team_member_count(conn):
 
     conn.commit()
 
-add_random_events()
+
+def hash_password(password):
+    """Hash a password using SHA-256."""
+    sha256 = hashlib.sha256()
+    sha256.update(password.encode('utf-8'))
+    return sha256.hexdigest()
+
+def add_users():
+    conn = get_db()
+    cursor = conn.cursor()
+
+    # Define users with their roles and passwords
+    users = [
+        ('user', 'atts', 'Viewer'),
+        ('judge', 'atts', 'Judge'),
+        ('admin', 'atts', 'Admin')
+    ]
+
+    # Insert each user into the database with a hashed password
+    for username, password, role in users:
+        hashed_password = hash_password(password)
+        cursor.execute("INSERT INTO users (username, password, role) VALUES (?, ?, ?)",
+                       (username, hashed_password, role))
+
+    conn.commit()
+    conn.close()
+
+add_users()
