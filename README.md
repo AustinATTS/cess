@@ -47,6 +47,9 @@ v0.3.2 - Authentication
 v0.4.0 - Rankings
 v0.4.1 - Order
 
+v0.5.0 - Reports
+v0.5.1 - Event Directory
+
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
 
