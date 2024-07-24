@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added triggers to help with score validation" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,25 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.College Event Score System.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.login.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.rankings.executor": "Run",
-    "Python.reports.executor": "Run",
-    "Python.scores.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "settings.editor.selected.configurable": "preferences.keymap"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Python.College Event Score System">
+}</component>
+  <component name="RunManager">
     <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
       <option name="ENV_FILES" value="" />
@@ -86,32 +92,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="cess" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/database.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.College Event Score System" />
-        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -130,86 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00055" summary="Created the database">
-      <option name="closed" value="true" />
-      <created>1721746559444</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1721746559444</updated>
-    </task>
-    <task id="LOCAL-00056" summary="Created database">
-      <option name="closed" value="true" />
-      <created>1721746576112</created>
-      <option name="number" value="00056" />
-      <option name="presentableId" value="LOCAL-00056" />
-      <option name="project" value="LOCAL" />
-      <updated>1721746576112</updated>
-    </task>
-    <task id="LOCAL-00057" summary="Fixed database_path for use in relation to cess">
-      <option name="closed" value="true" />
-      <created>1721747506355</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1721747506355</updated>
-    </task>
-    <task id="LOCAL-00058" summary="added generic sign in data (user, judge, admin pass = atts">
-      <option name="closed" value="true" />
-      <created>1721747534625</created>
-      <option name="number" value="00058" />
-      <option name="presentableId" value="LOCAL-00058" />
-      <option name="project" value="LOCAL" />
-      <updated>1721747534625</updated>
-    </task>
-    <task id="LOCAL-00059" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721747545039</created>
-      <option name="number" value="00059" />
-      <option name="presentableId" value="LOCAL-00059" />
-      <option name="project" value="LOCAL" />
-      <updated>1721747545040</updated>
-    </task>
-    <task id="LOCAL-00060" summary="Added v0.0.3">
-      <option name="closed" value="true" />
-      <created>1721748582429</created>
-      <option name="number" value="00060" />
-      <option name="presentableId" value="LOCAL-00060" />
-      <option name="project" value="LOCAL" />
-      <updated>1721748582429</updated>
-    </task>
-    <task id="LOCAL-00061" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721748589755</created>
-      <option name="number" value="00061" />
-      <option name="presentableId" value="LOCAL-00061" />
-      <option name="project" value="LOCAL" />
-      <updated>1721748589755</updated>
-    </task>
-    <task id="LOCAL-00062" summary="Created the look for participants and placed function markers">
-      <option name="closed" value="true" />
-      <created>1721763510486</created>
-      <option name="number" value="00062" />
-      <option name="presentableId" value="LOCAL-00062" />
-      <option name="project" value="LOCAL" />
-      <updated>1721763510486</updated>
-    </task>
-    <task id="LOCAL-00063" summary="Created functions (Working, no known errors">
-      <option name="closed" value="true" />
-      <created>1721763536628</created>
-      <option name="number" value="00063" />
-      <option name="presentableId" value="LOCAL-00063" />
-      <option name="project" value="LOCAL" />
-      <updated>1721763536628</updated>
-    </task>
-    <task id="LOCAL-00064" summary="Added random data">
-      <option name="closed" value="true" />
-      <created>1721763549190</created>
-      <option name="number" value="00064" />
-      <option name="presentableId" value="LOCAL-00064" />
-      <option name="project" value="LOCAL" />
-      <updated>1721763549190</updated>
     </task>
     <task id="LOCAL-00065" summary=".idea">
       <option name="closed" value="true" />
@@ -523,7 +426,87 @@
       <option name="project" value="LOCAL" />
       <updated>1721779209000</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="New database structure">
+      <option name="closed" value="true" />
+      <created>1721779391476</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779391476</updated>
+    </task>
+    <task id="LOCAL-00105" summary="Restored path issues">
+      <option name="closed" value="true" />
+      <created>1721779400917</created>
+      <option name="number" value="00105" />
+      <option name="presentableId" value="LOCAL-00105" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779400917</updated>
+    </task>
+    <task id="LOCAL-00106" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721779408501</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779408501</updated>
+    </task>
+    <task id="LOCAL-00107" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721779955275</created>
+      <option name="number" value="00107" />
+      <option name="presentableId" value="LOCAL-00107" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779955275</updated>
+    </task>
+    <task id="LOCAL-00108" summary="uvf">
+      <option name="closed" value="true" />
+      <created>1721779965379</created>
+      <option name="number" value="00108" />
+      <option name="presentableId" value="LOCAL-00108" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779965379</updated>
+    </task>
+    <task id="LOCAL-00109" summary="Added function to create random data for testing and demonstrative purposes (Participants and teams)">
+      <option name="closed" value="true" />
+      <created>1721779994576</created>
+      <option name="number" value="00109" />
+      <option name="presentableId" value="LOCAL-00109" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779994576</updated>
+    </task>
+    <task id="LOCAL-00110" summary="Added random event making">
+      <option name="closed" value="true" />
+      <created>1721780148372</created>
+      <option name="number" value="00110" />
+      <option name="presentableId" value="LOCAL-00110" />
+      <option name="project" value="LOCAL" />
+      <updated>1721780148372</updated>
+    </task>
+    <task id="LOCAL-00111" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721780154339</created>
+      <option name="number" value="00111" />
+      <option name="presentableId" value="LOCAL-00111" />
+      <option name="project" value="LOCAL" />
+      <updated>1721780154339</updated>
+    </task>
+    <task id="LOCAL-00112" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721780424947</created>
+      <option name="number" value="00112" />
+      <option name="presentableId" value="LOCAL-00112" />
+      <option name="project" value="LOCAL" />
+      <updated>1721780424947</updated>
+    </task>
+    <task id="LOCAL-00113" summary="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet">
+      <option name="closed" value="true" />
+      <created>1721780455007</created>
+      <option name="number" value="00113" />
+      <option name="presentableId" value="LOCAL-00113" />
+      <option name="project" value="LOCAL" />
+      <updated>1721780455007</updated>
+    </task>
+    <option name="localTasksCounter" value="114" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -538,12 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created functions (Working, no known errors" />
-    <MESSAGE value="Added random data" />
-    <MESSAGE value="Added v0.1.0" />
-    <MESSAGE value="Added a timer to reduce button presses" />
-    <MESSAGE value="Added some error handling" />
-    <MESSAGE value="Added generic error handling" />
     <MESSAGE value="Added v0.1.1" />
     <MESSAGE value="Added message to indicate keeping ID clear" />
     <MESSAGE value="Added v0.1.2 and reorganized a bit" />
@@ -558,11 +535,17 @@
     <MESSAGE value="Created score based on participant and events" />
     <MESSAGE value="Added v0.2.0 (accidently missed) and v0.3.0" />
     <MESSAGE value="Added combo boxes" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Added v0.3.1" />
     <MESSAGE value="Updated to add score validation" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added triggers to help with score validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added triggers to help with score validation" />
+    <MESSAGE value="New database structure" />
+    <MESSAGE value="Restored path issues" />
+    <MESSAGE value=".idea" />
+    <MESSAGE value="uvf" />
+    <MESSAGE value="Added function to create random data for testing and demonstrative purposes (Participants and teams)" />
+    <MESSAGE value="Added random event making" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
   </component>
 </project>
