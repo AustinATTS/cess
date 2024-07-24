@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Created report management">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,46 +113,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00084" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721771974086</created>
-      <option name="number" value="00084" />
-      <option name="presentableId" value="LOCAL-00084" />
-      <option name="project" value="LOCAL" />
-      <updated>1721771974086</updated>
-    </task>
-    <task id="LOCAL-00085" summary="Added v0.1.3">
-      <option name="closed" value="true" />
-      <created>1721772185034</created>
-      <option name="number" value="00085" />
-      <option name="presentableId" value="LOCAL-00085" />
-      <option name="project" value="LOCAL" />
-      <updated>1721772185034</updated>
-    </task>
-    <task id="LOCAL-00086" summary="Cleaned up">
-      <option name="closed" value="true" />
-      <created>1721774379464</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1721774379464</updated>
-    </task>
-    <task id="LOCAL-00087" summary="Added event management based of the participant management">
-      <option name="closed" value="true" />
-      <created>1721774403129</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1721774403129</updated>
-    </task>
-    <task id="LOCAL-00088" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721774409593</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1721774409593</updated>
     </task>
     <task id="LOCAL-00089" summary=".idea">
       <option name="closed" value="true" />
@@ -509,7 +466,47 @@
       <option name="project" value="LOCAL" />
       <updated>1721840414346</updated>
     </task>
-    <option name="localTasksCounter" value="133" />
+    <task id="LOCAL-00133" summary="Generic report">
+      <option name="closed" value="true" />
+      <created>1721855368792</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855368792</updated>
+    </task>
+    <task id="LOCAL-00134" summary="Added an event directory">
+      <option name="closed" value="true" />
+      <created>1721855399020</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855399020</updated>
+    </task>
+    <task id="LOCAL-00135" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721855408573</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855408573</updated>
+    </task>
+    <task id="LOCAL-00136" summary="Updated structure">
+      <option name="closed" value="true" />
+      <created>1721855423147</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855423147</updated>
+    </task>
+    <task id="LOCAL-00137" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721855434689</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1721855434689</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -524,9 +521,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created score based on participant and events" />
-    <MESSAGE value="Added v0.2.0 (accidently missed) and v0.3.0" />
-    <MESSAGE value="Added combo boxes" />
     <MESSAGE value="Added v0.3.1" />
     <MESSAGE value="Updated to add score validation" />
     <MESSAGE value="Added triggers to help with score validation" />
@@ -546,9 +540,12 @@
     <MESSAGE value="Generic reports based off test data" />
     <MESSAGE value="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer" />
     <MESSAGE value="Updated title" />
-    <MESSAGE value="Test data" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Created report management" />
-    <option name="LAST_COMMIT_MESSAGE" value="Created report management" />
+    <MESSAGE value="Generic report" />
+    <MESSAGE value="Added an event directory" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value="Updated structure" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
