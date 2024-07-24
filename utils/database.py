@@ -3,7 +3,7 @@ import CTkMessagebox as ctkm
 import os
 
 def get_db():
-    database_path = os.path.join("data", "database.db")
+    database_path = os.path.join("..", "data", "database.db")
     try:
         conn = sqlite3.connect(database_path)
         return conn
@@ -15,6 +15,8 @@ def get_db():
 def init_db():
     conn = get_db()
     cursor = conn.cursor()
+
+    # Create tables if they do not exist
     cursor.execute('''CREATE TABLE IF NOT EXISTS users (
                         id INTEGER PRIMARY KEY,
                         username TEXT UNIQUE,
@@ -41,7 +43,8 @@ def init_db():
                         participant_id INTEGER,
                         event_id INTEGER,
                         score INTEGER,
-                        date TEXT)''')
+                        date TEXT,
+                        team_id INTEGER)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS reports (
                         id INTEGER PRIMARY KEY,
                         name TEXT,
@@ -59,8 +62,32 @@ def init_db():
         cursor.execute("INSERT OR IGNORE INTO teams (id, name, member_count) VALUES (?, ?, ?)",
                        (team_id, team_name, member_count))
 
+    # Create triggers
+    cursor.execute('''CREATE TRIGGER IF NOT EXISTS restrict_team1_events
+                      BEFORE INSERT ON scores
+                      FOR EACH ROW
+                      WHEN (SELECT team_id FROM participants WHERE id = NEW.participant_id) = 1
+                      BEGIN
+                          SELECT RAISE(FAIL, 'Participant in Team 1 cannot attend more than 5 events')
+                          WHERE (SELECT COUNT(*) FROM scores WHERE participant_id = NEW.participant_id) >= 5;
+                      END;''')
+
+    cursor.execute('''CREATE TRIGGER IF NOT EXISTS enforce_team_events
+                      BEFORE INSERT ON scores
+                      FOR EACH ROW
+                      WHEN (SELECT team_id FROM participants WHERE id = NEW.participant_id) BETWEEN 2 AND 5
+                      BEGIN
+                          INSERT INTO scores (participant_id, event_id, score, date, team_id)
+                          SELECT p.id, NEW.event_id, NEW.score, NEW.date, p.team_id
+                          FROM participants p
+                          WHERE p.team_id = (SELECT team_id FROM participants WHERE id = NEW.participant_id)
+                          AND NOT EXISTS (SELECT 1 FROM scores WHERE participant_id = p.id AND event_id = NEW.event_id);
+                          SELECT RAISE(IGNORE);
+                      END;''')
+
     conn.commit()
     conn.close()
+
 
 
 if __name__ == "__main__":
