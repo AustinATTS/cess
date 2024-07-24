@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added triggers to help with score validation" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,30 +130,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00052" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721731346769</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1721731346769</updated>
-    </task>
-    <task id="LOCAL-00053" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721746525504</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1721746525505</updated>
-    </task>
-    <task id="LOCAL-00054" summary="Created database tables">
-      <option name="closed" value="true" />
-      <created>1721746538201</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1721746538202</updated>
     </task>
     <task id="LOCAL-00055" summary="Created the database">
       <option name="closed" value="true" />
@@ -525,7 +499,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721778471816</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="Updated to add score validation">
+      <option name="closed" value="true" />
+      <created>1721779190143</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779190143</updated>
+    </task>
+    <task id="LOCAL-00102" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721779196168</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779196168</updated>
+    </task>
+    <task id="LOCAL-00103" summary="Added triggers to help with score validation">
+      <option name="closed" value="true" />
+      <created>1721779209000</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1721779209000</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -540,8 +538,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added v0.0.3" />
-    <MESSAGE value="Created the look for participants and placed function markers" />
     <MESSAGE value="Created functions (Working, no known errors" />
     <MESSAGE value="Added random data" />
     <MESSAGE value="Added v0.1.0" />
@@ -564,7 +560,9 @@
     <MESSAGE value="Added combo boxes" />
     <MESSAGE value="Test data" />
     <MESSAGE value="Added v0.3.1" />
+    <MESSAGE value="Updated to add score validation" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Added triggers to help with score validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added triggers to help with score validation" />
   </component>
 </project>
