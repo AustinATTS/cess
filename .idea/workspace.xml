@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added the looks of rankings" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -113,46 +108,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00065" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721763558499</created>
-      <option name="number" value="00065" />
-      <option name="presentableId" value="LOCAL-00065" />
-      <option name="project" value="LOCAL" />
-      <updated>1721763558499</updated>
-    </task>
-    <task id="LOCAL-00066" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721763740308</created>
-      <option name="number" value="00066" />
-      <option name="presentableId" value="LOCAL-00066" />
-      <option name="project" value="LOCAL" />
-      <updated>1721763740308</updated>
-    </task>
-    <task id="LOCAL-00067" summary="Added v0.1.0">
-      <option name="closed" value="true" />
-      <created>1721764196770</created>
-      <option name="number" value="00067" />
-      <option name="presentableId" value="LOCAL-00067" />
-      <option name="project" value="LOCAL" />
-      <updated>1721764196770</updated>
-    </task>
-    <task id="LOCAL-00068" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721764205836</created>
-      <option name="number" value="00068" />
-      <option name="presentableId" value="LOCAL-00068" />
-      <option name="project" value="LOCAL" />
-      <updated>1721764205836</updated>
-    </task>
-    <task id="LOCAL-00069" summary="Added a timer to reduce button presses">
-      <option name="closed" value="true" />
-      <created>1721765737853</created>
-      <option name="number" value="00069" />
-      <option name="presentableId" value="LOCAL-00069" />
-      <option name="project" value="LOCAL" />
-      <updated>1721765737853</updated>
     </task>
     <task id="LOCAL-00070" summary="Added some error handling">
       <option name="closed" value="true" />
@@ -506,7 +461,47 @@
       <option name="project" value="LOCAL" />
       <updated>1721780455007</updated>
     </task>
-    <option name="localTasksCounter" value="114" />
+    <task id="LOCAL-00114" summary="Fixed entry box updating (added team variable">
+      <option name="closed" value="true" />
+      <created>1721821379407</created>
+      <option name="number" value="00114" />
+      <option name="presentableId" value="LOCAL-00114" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821379407</updated>
+    </task>
+    <task id="LOCAL-00115" summary="Added v0.3.2">
+      <option name="closed" value="true" />
+      <created>1721821400028</created>
+      <option name="number" value="00115" />
+      <option name="presentableId" value="LOCAL-00115" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821400028</updated>
+    </task>
+    <task id="LOCAL-00116" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721821408472</created>
+      <option name="number" value="00116" />
+      <option name="presentableId" value="LOCAL-00116" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821408472</updated>
+    </task>
+    <task id="LOCAL-00117" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721821414972</created>
+      <option name="number" value="00117" />
+      <option name="presentableId" value="LOCAL-00117" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821414972</updated>
+    </task>
+    <task id="LOCAL-00118" summary="Added the looks of rankings">
+      <option name="closed" value="true" />
+      <created>1721821428821</created>
+      <option name="number" value="00118" />
+      <option name="presentableId" value="LOCAL-00118" />
+      <option name="project" value="LOCAL" />
+      <updated>1721821428821</updated>
+    </task>
+    <option name="localTasksCounter" value="119" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -521,9 +516,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added v0.1.1" />
-    <MESSAGE value="Added message to indicate keeping ID clear" />
-    <MESSAGE value="Added v0.1.2 and reorganized a bit" />
     <MESSAGE value="Added participant and team management and authentication" />
     <MESSAGE value="Updated database initialization" />
     <MESSAGE value="Added v0.1.3" />
@@ -540,12 +532,15 @@
     <MESSAGE value="Added triggers to help with score validation" />
     <MESSAGE value="New database structure" />
     <MESSAGE value="Restored path issues" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="uvf" />
     <MESSAGE value="Added function to create random data for testing and demonstrative purposes (Participants and teams)" />
     <MESSAGE value="Added random event making" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
+    <MESSAGE value="Fixed entry box updating (added team variable" />
+    <MESSAGE value="Added v0.3.2" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value=".idea" />
+    <MESSAGE value="Added the looks of rankings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the looks of rankings" />
   </component>
 </project>
