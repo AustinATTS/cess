@@ -50,6 +50,10 @@ v0.4.1 - Order
 v0.5.0 - Reports
 v0.5.1 - Event Directory
 
+v0.6.0 - Backups
+v0.6.1 - Restore Latest
+v0.6.2 - Restore Custom
+
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
 
