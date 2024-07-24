@@ -98,6 +98,8 @@ class Reports:
                 data = self.get_team_data()
             elif report_type == "Score Report":
                 data = self.get_score_data()
+            elif report_type == "Event Directory":
+                data = self.get_event_directory_data()
             else:
                 return
 
@@ -124,6 +126,7 @@ class Reports:
         ctk.CTkButton(report_toplevel, text="Participant Report", command=lambda: create_report("Participant Report")).pack(pady=5)
         ctk.CTkButton(report_toplevel, text="Team Report", command=lambda: create_report("Team Report")).pack(pady=5)
         ctk.CTkButton(report_toplevel, text="Score Report", command=lambda: create_report("Score Report")).pack(pady=5)
+        ctk.CTkButton(report_toplevel, text="Event Directory", command=lambda: create_report("Event Directory")).pack(pady=5)
 
     def view_report(self):
         if not self.debounce():
@@ -175,6 +178,20 @@ class Reports:
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("SELECT * FROM scores")
+        data = cursor.fetchall()
+        conn.close()
+        return data
+
+    def get_event_directory_data(self):
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("""
+            SELECT e.name as event_name, e.date, p.name as participant_name
+            FROM scores s
+            JOIN events e ON s.event_id = e.id
+            JOIN participants p ON s.participant_id = p.id
+            ORDER BY e.date, e.name, p.name
+        """)
         data = cursor.fetchall()
         conn.close()
         return data
