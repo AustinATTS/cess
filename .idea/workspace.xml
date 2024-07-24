@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Created report management">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -118,62 +116,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00077" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721769211768</created>
-      <option name="number" value="00077" />
-      <option name="presentableId" value="LOCAL-00077" />
-      <option name="project" value="LOCAL" />
-      <updated>1721769211768</updated>
-    </task>
-    <task id="LOCAL-00078" summary="Added v0.1.2 and reorganized a bit">
-      <option name="closed" value="true" />
-      <created>1721769429403</created>
-      <option name="number" value="00078" />
-      <option name="presentableId" value="LOCAL-00078" />
-      <option name="project" value="LOCAL" />
-      <updated>1721769429403</updated>
-    </task>
-    <task id="LOCAL-00079" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721769541885</created>
-      <option name="number" value="00079" />
-      <option name="presentableId" value="LOCAL-00079" />
-      <option name="project" value="LOCAL" />
-      <updated>1721769541885</updated>
-    </task>
-    <task id="LOCAL-00080" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721769550447</created>
-      <option name="number" value="00080" />
-      <option name="presentableId" value="LOCAL-00080" />
-      <option name="project" value="LOCAL" />
-      <updated>1721769550447</updated>
-    </task>
-    <task id="LOCAL-00081" summary="Added participant and team management and authentication">
-      <option name="closed" value="true" />
-      <created>1721771942384</created>
-      <option name="number" value="00081" />
-      <option name="presentableId" value="LOCAL-00081" />
-      <option name="project" value="LOCAL" />
-      <updated>1721771942384</updated>
-    </task>
-    <task id="LOCAL-00082" summary="Updated database initialization">
-      <option name="closed" value="true" />
-      <created>1721771956357</created>
-      <option name="number" value="00082" />
-      <option name="presentableId" value="LOCAL-00082" />
-      <option name="project" value="LOCAL" />
-      <updated>1721771956357</updated>
-    </task>
-    <task id="LOCAL-00083" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721771965940</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1721771965940</updated>
     </task>
     <task id="LOCAL-00084" summary=".idea">
       <option name="closed" value="true" />
@@ -511,7 +453,63 @@
       <option name="project" value="LOCAL" />
       <updated>1721835579814</updated>
     </task>
-    <option name="localTasksCounter" value="126" />
+    <task id="LOCAL-00126" summary="Added new imports">
+      <option name="closed" value="true" />
+      <created>1721840322880</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840322880</updated>
+    </task>
+    <task id="LOCAL-00127" summary="Generic reports based off test data">
+      <option name="closed" value="true" />
+      <created>1721840339497</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840339497</updated>
+    </task>
+    <task id="LOCAL-00128" summary="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer">
+      <option name="closed" value="true" />
+      <created>1721840370680</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840370680</updated>
+    </task>
+    <task id="LOCAL-00129" summary="Updated title">
+      <option name="closed" value="true" />
+      <created>1721840382083</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840382083</updated>
+    </task>
+    <task id="LOCAL-00130" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721840391433</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840391433</updated>
+    </task>
+    <task id="LOCAL-00131" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721840397619</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840397619</updated>
+    </task>
+    <task id="LOCAL-00132" summary="Created report management">
+      <option name="closed" value="true" />
+      <created>1721840414346</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1721840414346</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,11 +524,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Cleaned up" />
-    <MESSAGE value="Added event management based of the participant management" />
-    <MESSAGE value="Added CTkListbox" />
-    <MESSAGE value="removed unncessary imports" />
-    <MESSAGE value="Updated title" />
     <MESSAGE value="Created score based on participant and events" />
     <MESSAGE value="Added v0.2.0 (accidently missed) and v0.3.0" />
     <MESSAGE value="Added combo boxes" />
@@ -548,9 +541,14 @@
     <MESSAGE value="Added the looks of rankings" />
     <MESSAGE value="Added v0.4.0" />
     <MESSAGE value="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Added v0.4.1" />
+    <MESSAGE value="Added new imports" />
+    <MESSAGE value="Generic reports based off test data" />
+    <MESSAGE value="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer" />
+    <MESSAGE value="Updated title" />
+    <MESSAGE value="Test data" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Created report management" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created report management" />
   </component>
 </project>
