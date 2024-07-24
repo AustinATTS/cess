@@ -2,6 +2,7 @@ import random
 import string
 import os
 import sqlite3
+from datetime import datetime, timedelta
 
 def get_db():
     database_path = os.path.join("..", "data", "database.db")
@@ -11,6 +12,44 @@ def get_db():
 def random_string(length=8):
     letters = string.ascii_lowercase
     return ''.join(random.choice(letters) for i in range(length))
+
+
+def random_date(start_date, end_date):
+    time_between_dates = end_date - start_date
+    days_between_dates = time_between_dates.days
+    random_number_of_days = random.randrange(days_between_dates)
+    random_date = start_date + timedelta(days=random_number_of_days)
+    return random_date.strftime("%Y-%m-%d")
+
+
+def add_random_events():
+    conn = get_db()
+    cursor = conn.cursor()
+
+    # Set date range for events
+    start_date = datetime.now()
+    end_date = start_date + timedelta(days=365)  # One year from now
+
+    for _ in range(20):
+        name = random_string(10)
+        event_type = random.choice(['Conference', 'Workshop', 'Seminar', 'Webinar', 'Meetup'])
+        date = random_date(start_date, end_date)
+        location = random_string(12)
+
+        cursor.execute("INSERT INTO events (name, type, date, location) VALUES (?, ?, ?, ?)",
+                       (name, event_type, date, location))
+
+    conn.commit()
+    conn.close()
+
+
+def verify_events():
+    conn = get_db()
+    cursor = conn.cursor()
+    cursor.execute("SELECT * FROM events")
+    events = cursor.fetchall()
+    conn.close()
+    return events
 
 
 def random_email():
@@ -62,4 +101,4 @@ def update_team_member_count(conn):
 
     conn.commit()
 
-add_random_participants()
+add_random_events()
