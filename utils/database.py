@@ -16,7 +16,6 @@ def init_db():
     conn = get_db()
     cursor = conn.cursor()
 
-    # Create tables if they do not exist
     cursor.execute('''CREATE TABLE IF NOT EXISTS users (
                         id INTEGER PRIMARY KEY,
                         username TEXT UNIQUE,
@@ -56,13 +55,11 @@ def init_db():
                         date TEXT,
                         details TEXT)''')
 
-    # Ensure teams are initialized
     for team_id, team_name, member_count in [(1, 'Team 1', 0), (2, 'Team 2', 0), (3, 'Team 3', 0), (4, 'Team 4', 0),
                                              (5, 'Team 5', 0)]:
         cursor.execute("INSERT OR IGNORE INTO teams (id, name, member_count) VALUES (?, ?, ?)",
                        (team_id, team_name, member_count))
 
-    # Create triggers
     cursor.execute('''CREATE TRIGGER IF NOT EXISTS restrict_team1_events
                       BEFORE INSERT ON scores
                       FOR EACH ROW
