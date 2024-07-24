@@ -1,6 +1,5 @@
 import customtkinter as ctk
 import CTkListbox as ctkl
-import CTkMessagebox as ctkm
 from utils.database import get_db
 import time
 
@@ -10,6 +9,7 @@ class Rankings:
         self.app = app
         self.last_button_press_time = 0
         self.button_press_interval = 2.0
+        self.rankings = []
 
     def load_page(self, frame):
         self.title_frame = ctk.CTkFrame(frame, width=722, height=48)
@@ -49,9 +49,9 @@ class Rankings:
         self.date_label.grid(row=0, column=4, padx=(10, 20), pady=10)
 
         self.calculate_rankings_button = ctk.CTkButton(self.button_frame, text="Calculate Rankings", command=self.calculate_rankings,
-                                               width=331)
+                                                       width=331)
         self.view_rankings_button = ctk.CTkButton(self.button_frame, text="View Rankings", command=self.view_rankings,
-                                           width=331)
+                                                  width=331)
 
         self.calculate_rankings_button.grid(row=0, column=0, padx=(20, 10), pady=20)
         self.view_rankings_button.grid(row=0, column=1, padx=(10, 20), pady=20)
@@ -65,15 +65,21 @@ class Rankings:
     def get_scores(self):
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT * FROM scores")
+        cursor.execute("""
+        SELECT participants.name, events.name, scores.score, scores.date, participants.team_id
+        FROM scores
+        JOIN participants ON scores.participant_id = participants.id
+        JOIN events ON scores.event_id = events.id
+        """)
         rows = cursor.fetchall()
         conn.close()
         return rows
 
     def refresh_listbox(self):
         self.rank_listbox.delete(0, ctk.END)
-        for row in self.get_scores():
-            self.rank_listbox.insert(ctk.END, " | ".join(map(str, row)))
+        individual_rankings = self.calculate_individual_rankings()
+        for rank, (participant, event, score, date, team_id) in enumerate(individual_rankings, start=1):
+            self.rank_listbox.insert(ctk.END, f"{rank}. {participant} | {event} | {score} | {date}")
 
     def debounce(self):
         current_time = time.time()
@@ -82,8 +88,55 @@ class Rankings:
         self.last_button_press_time = current_time
         return True
 
+    def calculate_individual_rankings(self):
+        scores = self.get_scores()
+
+        individual_scores = sorted(scores, key=lambda x: (-x[2], x[0]))
+
+        return individual_scores
+
     def calculate_rankings(self):
-        pass
+        if not self.debounce():
+            return
+
+        scores = self.get_scores()
+
+        individual_scores = {}
+        team_scores = {2: 0, 3: 0, 4: 0, 5: 0}
+
+        for participant, event, score, date, team_id in scores:
+            if team_id == 1:
+                if participant not in individual_scores:
+                    individual_scores[participant] = 0
+                individual_scores[participant] += score
+            else:
+                team_scores[team_id] += score
+
+        self.rankings = [(participant, total_score) for participant, total_score in individual_scores.items()]
+        for team_id, total_score in team_scores.items():
+            self.rankings.append((f"Team {team_id}", total_score))
+
+        self.rankings.sort(key=lambda x: (-x[1], x[0]))
+
+        self.refresh_listbox()
 
     def view_rankings(self):
-        pass
+        if not self.debounce():
+            return
+
+        top_level = ctk.CTkToplevel()
+        top_level.geometry(f"{350}x{600}")
+        top_level.title("Rankings")
+
+        rankings_frame = ctk.CTkFrame(top_level, width=350, height=600)
+
+        rankings_frame.grid_propagate(False)
+
+        rankings_frame.grid(row=0, column=0, padx=(0, 20), pady=0)
+
+        rank_listbox = ctkl.CTkListbox(rankings_frame, width=282, height=562)
+
+        rank_listbox.grid(row=0, column=0, padx=20, pady=10)
+
+        for rank, (participant, score) in enumerate(self.rankings, start=1):
+            rank_listbox.insert(ctk.END, f"{rank}. {participant} - Total Score: {score}")
