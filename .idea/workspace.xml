@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.4.1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,38 +110,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00072" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721766805953</created>
-      <option name="number" value="00072" />
-      <option name="presentableId" value="LOCAL-00072" />
-      <option name="project" value="LOCAL" />
-      <updated>1721766805953</updated>
-    </task>
-    <task id="LOCAL-00073" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721766816486</created>
-      <option name="number" value="00073" />
-      <option name="presentableId" value="LOCAL-00073" />
-      <option name="project" value="LOCAL" />
-      <updated>1721766816486</updated>
-    </task>
-    <task id="LOCAL-00074" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721767707122</created>
-      <option name="number" value="00074" />
-      <option name="presentableId" value="LOCAL-00074" />
-      <option name="project" value="LOCAL" />
-      <updated>1721767707122</updated>
-    </task>
-    <task id="LOCAL-00075" summary="Added v0.1.1">
-      <option name="closed" value="true" />
-      <created>1721767741923</created>
-      <option name="number" value="00075" />
-      <option name="presentableId" value="LOCAL-00075" />
-      <option name="project" value="LOCAL" />
-      <updated>1721767741923</updated>
     </task>
     <task id="LOCAL-00076" summary="Added message to indicate keeping ID clear">
       <option name="closed" value="true" />
@@ -505,7 +471,39 @@
       <option name="project" value="LOCAL" />
       <updated>1721821604160</updated>
     </task>
-    <option name="localTasksCounter" value="121" />
+    <task id="LOCAL-00121" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721834838987</created>
+      <option name="number" value="00121" />
+      <option name="presentableId" value="LOCAL-00121" />
+      <option name="project" value="LOCAL" />
+      <updated>1721834838987</updated>
+    </task>
+    <task id="LOCAL-00122" summary="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores">
+      <option name="closed" value="true" />
+      <created>1721834908054</created>
+      <option name="number" value="00122" />
+      <option name="presentableId" value="LOCAL-00122" />
+      <option name="project" value="LOCAL" />
+      <updated>1721834908054</updated>
+    </task>
+    <task id="LOCAL-00123" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721834915797</created>
+      <option name="number" value="00123" />
+      <option name="presentableId" value="LOCAL-00123" />
+      <option name="project" value="LOCAL" />
+      <updated>1721834915797</updated>
+    </task>
+    <task id="LOCAL-00124" summary="Added v0.4.1">
+      <option name="closed" value="true" />
+      <created>1721835571864</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1721835571864</updated>
+    </task>
+    <option name="localTasksCounter" value="125" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -520,8 +518,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated database initialization" />
-    <MESSAGE value="Added v0.1.3" />
     <MESSAGE value="Cleaned up" />
     <MESSAGE value="Added event management based of the participant management" />
     <MESSAGE value="Added CTkListbox" />
@@ -541,10 +537,12 @@
     <MESSAGE value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
     <MESSAGE value="Fixed entry box updating (added team variable" />
     <MESSAGE value="Added v0.3.2" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Added the looks of rankings" />
     <MESSAGE value="Added v0.4.0" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value="Added v0.4.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added v0.4.1" />
   </component>
 </project>
