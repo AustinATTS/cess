@@ -63,7 +63,11 @@ class Main:
         self.feedback_label.bind("<Leave>", lambda event: self.feedback_label.configure(font=("", 13), cursor="arrow"))
 
     def appearance(self, appearance: str):
-        pass
+        ctk.set_appearance_mode(appearance.lower())
+
+    def clear_page(self):
+        self.navigation_frame.destroy()
+        self.content_frame.destroy()
 
     def clear(self, frame):
         for widget in frame.winfo_children():
@@ -129,7 +133,3 @@ class Main:
 
         submit_button.grid(row=5, column=0, padx=60, pady=(0, 20))
 
-
-if __name__ == "__main__":
-    app = App()
-    app.mainloop()
