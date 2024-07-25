@@ -20,7 +20,8 @@ def init_db():
                         id INTEGER PRIMARY KEY,
                         username TEXT UNIQUE,
                         password TEXT,
-                        role TEXT)''')
+                        role TEXT,
+                        theme_path TEXT)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS participants (
                         id INTEGER PRIMARY KEY,
                         name TEXT,
