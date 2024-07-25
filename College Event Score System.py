@@ -42,7 +42,7 @@ class App(ctk.CTk):
         self.edit_dropdown.add_option(option="Delete Record", command=delete_record)
 
         self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
-        self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
+        self.settings_dropdown.add_option(option="Colour Scheme", command=lambda: colour_scheme(self))
         self.settings_dropdown.add_option(option="Scale", command=scale)
         self.settings_dropdown.add_option(option="Logout", command=lambda: logout(self))
 
