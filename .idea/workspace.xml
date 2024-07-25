@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Updated colour scheme function call">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/backups/backup_1721858899.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +77,7 @@
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess\assets" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.College Event Score System">
     <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
       <option name="ENV_FILES" value="" />
@@ -97,9 +100,55 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cess" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="random_data" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cess" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/random_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python.College Event Score System" />
+        <item itemvalue="Python.random_data" />
+        <item itemvalue="Python.database" />
       </list>
     </recent_temporary>
   </component>
@@ -118,22 +167,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00106" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721779408501</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779408501</updated>
-    </task>
-    <task id="LOCAL-00107" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721779955275</created>
-      <option name="number" value="00107" />
-      <option name="presentableId" value="LOCAL-00107" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779955275</updated>
     </task>
     <task id="LOCAL-00108" summary="uvf">
       <option name="closed" value="true" />
@@ -511,7 +544,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721931026403</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="Added scale settings">
+      <option name="closed" value="true" />
+      <created>1721932359295</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1721932359295</updated>
+    </task>
+    <task id="LOCAL-00156" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721932371781</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1721932371781</updated>
+    </task>
+    <option name="localTasksCounter" value="157" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -526,7 +575,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added the looks of rankings" />
     <MESSAGE value="Added v0.4.0" />
     <MESSAGE value="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores" />
     <MESSAGE value="Added v0.4.1" />
@@ -547,10 +595,11 @@
     <MESSAGE value="Added v0.6." />
     <MESSAGE value="Added a workaround to allow logout" />
     <MESSAGE value="Added a workaround to allow logout&#10;Added colour theme" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Used Akascape thememaker, adjusting to be a toplevel" />
     <MESSAGE value="Added a call to display theme maker" />
     <MESSAGE value="Updated colour scheme function call" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated colour scheme function call" />
+    <MESSAGE value="Added scale settings" />
+    <MESSAGE value=".idea" />
+    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
 </project>
