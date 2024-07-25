@@ -7,8 +7,7 @@ from utils.database import get_db
 class Login:
     def __init__(self, app):
         self.app = app
-
-        self.main = Main(self)
+        self.main = None
 
     def load_page(self, frame):
 
@@ -36,7 +35,6 @@ class Login:
         self.password_label.grid(row=3, column=0, padx=60, pady=(10, 0))
 
     def authenticate(self, frame, username, password):
-        username = username
         password_hash = hashlib.sha256(password.encode()).hexdigest()
 
         conn = get_db()
@@ -53,6 +51,8 @@ class Login:
     def submit(self, frame):
         self.clear_page()
         self.app.geometry(f"{1000}x{580}")
+        self.main = Main(self.app)
+        self.app.set_main(self.main)
         self.main.load_page(frame)
 
     def clear_page(self):

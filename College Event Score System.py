@@ -12,8 +12,11 @@ class App(ctk.CTk):
     def __init__(self):
         super().__init__()
 
+        self.original_width = 350
+        self.original_height = 312
+
         self.title("College Event Score System")
-        self.geometry(f"{350}x{312}")
+        self.geometry(f"{self.original_width}x{self.original_height}")
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)
@@ -41,7 +44,7 @@ class App(ctk.CTk):
         self.settings_dropdown = ctkmb.CustomDropdownMenu(widget=self.settings_button)
         self.settings_dropdown.add_option(option="Colour Scheme", command=colour_scheme)
         self.settings_dropdown.add_option(option="Scale", command=scale)
-        self.settings_dropdown.add_option(option="Logout", command=logout)
+        self.settings_dropdown.add_option(option="Logout", command=lambda: logout(self))
 
         self.about_dropdown = ctkmb.CustomDropdownMenu(widget=self.about_button)
         self.about_dropdown.add_option(option="Website", command=website)
@@ -49,7 +52,17 @@ class App(ctk.CTk):
         self.about_dropdown.add_option(option="Description", command=description)
 
         self.login = Login(self)
+        self.main = None  # Will hold the instance of the Main class
 
+        self.login.load_page(self)
+
+    def set_main(self, main_instance):
+        self.main = main_instance
+
+    def perform_logout(self):
+        if self.main:
+            self.main.clear_page()
+        self.geometry(f"{self.original_width}x{self.original_height}")
         self.login.load_page(self)
 
 
@@ -58,4 +71,4 @@ if __name__ == "__main__":
         app = App()
         app.mainloop()
     except Exception as e:
-        ctkm.CTkMessagebox(title="Error", message=f"There is an error\ne", icon="cancel")
+        ctkm.CTkMessagebox(title="Error", message=f"There is an error\n{e}", icon="cancel")
