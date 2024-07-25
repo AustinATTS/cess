@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added restore_custom()">
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added v0.6.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,22 +117,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00097" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721778231019</created>
-      <option name="number" value="00097" />
-      <option name="presentableId" value="LOCAL-00097" />
-      <option name="project" value="LOCAL" />
-      <updated>1721778231019</updated>
-    </task>
-    <task id="LOCAL-00098" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721778237125</created>
-      <option name="number" value="00098" />
-      <option name="presentableId" value="LOCAL-00098" />
-      <option name="project" value="LOCAL" />
-      <updated>1721778237125</updated>
     </task>
     <task id="LOCAL-00099" summary="Added v0.3.1">
       <option name="closed" value="true" />
@@ -510,7 +494,23 @@
       <option name="project" value="LOCAL" />
       <updated>1721859935334</updated>
     </task>
-    <option name="localTasksCounter" value="146" />
+    <task id="LOCAL-00146" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721859990670</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1721859990670</updated>
+    </task>
+    <task id="LOCAL-00147" summary="Added v0.6.">
+      <option name="closed" value="true" />
+      <created>1721860232975</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1721860232975</updated>
+    </task>
+    <option name="localTasksCounter" value="148" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -525,7 +525,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="uvf" />
     <MESSAGE value="Added function to create random data for testing and demonstrative purposes (Participants and teams)" />
     <MESSAGE value="Added random event making" />
     <MESSAGE value="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet" />
@@ -547,9 +546,10 @@
     <MESSAGE value="Added v0.5.0 (missed) and v0.5.1" />
     <MESSAGE value="Created the function to save a backup" />
     <MESSAGE value="Test backup" />
-    <MESSAGE value=".idea" />
     <MESSAGE value="Added restore_latest()" />
     <MESSAGE value="Added restore_custom()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added restore_custom()" />
+    <MESSAGE value=".idea" />
+    <MESSAGE value="Added v0.6." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added v0.6." />
   </component>
 </project>
