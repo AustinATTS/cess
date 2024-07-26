@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Test themes (3 is good for test purposes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,54 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00114" summary="Fixed entry box updating (added team variable">
-      <option name="closed" value="true" />
-      <created>1721821379407</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821379407</updated>
-    </task>
-    <task id="LOCAL-00115" summary="Added v0.3.2">
-      <option name="closed" value="true" />
-      <created>1721821400028</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821400028</updated>
-    </task>
-    <task id="LOCAL-00116" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721821408472</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821408472</updated>
-    </task>
-    <task id="LOCAL-00117" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721821414972</created>
-      <option name="number" value="00117" />
-      <option name="presentableId" value="LOCAL-00117" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821414972</updated>
-    </task>
-    <task id="LOCAL-00118" summary="Added the looks of rankings">
-      <option name="closed" value="true" />
-      <created>1721821428821</created>
-      <option name="number" value="00118" />
-      <option name="presentableId" value="LOCAL-00118" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821428821</updated>
-    </task>
-    <task id="LOCAL-00119" summary="Added v0.4.0">
-      <option name="closed" value="true" />
-      <created>1721821597845</created>
-      <option name="number" value="00119" />
-      <option name="presentableId" value="LOCAL-00119" />
-      <option name="project" value="LOCAL" />
-      <updated>1721821597845</updated>
     </task>
     <task id="LOCAL-00120" summary=".idea">
       <option name="closed" value="true" />
@@ -561,7 +509,55 @@
       <option name="project" value="LOCAL" />
       <updated>1721933264180</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1721952743421</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952743421</updated>
+    </task>
+    <task id="LOCAL-00164" summary="Sends user_id">
+      <option name="closed" value="true" />
+      <created>1721952752171</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952752171</updated>
+    </task>
+    <task id="LOCAL-00165" summary="Applies theme">
+      <option name="closed" value="true" />
+      <created>1721952763300</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952763300</updated>
+    </task>
+    <task id="LOCAL-00166" summary="Saves and loads theme">
+      <option name="closed" value="true" />
+      <created>1721952772905</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952772905</updated>
+    </task>
+    <task id="LOCAL-00167" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721952779795</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952779795</updated>
+    </task>
+    <task id="LOCAL-00168" summary="Test themes (3 is good for test purposes">
+      <option name="closed" value="true" />
+      <created>1721952802419</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1721952802419</updated>
+    </task>
+    <option name="localTasksCounter" value="169" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -576,13 +572,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Generic reports based off test data" />
-    <MESSAGE value="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer" />
-    <MESSAGE value="Updated title" />
-    <MESSAGE value="Created report management" />
     <MESSAGE value="Generic report" />
     <MESSAGE value="Added an event directory" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Updated structure" />
     <MESSAGE value="Added v0.5.0 (missed) and v0.5.1" />
     <MESSAGE value="Created the function to save a backup" />
@@ -600,7 +591,12 @@
     <MESSAGE value="N/A" />
     <MESSAGE value="Added theme_path to users" />
     <MESSAGE value="Spacing" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value="Sends user_id" />
+    <MESSAGE value="Applies theme" />
+    <MESSAGE value="Saves and loads theme" />
     <MESSAGE value=".idea" />
-    <option name="LAST_COMMIT_MESSAGE" value=".idea" />
+    <MESSAGE value="Test themes (3 is good for test purposes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test themes (3 is good for test purposes" />
   </component>
 </project>
