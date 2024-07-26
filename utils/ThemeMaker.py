@@ -399,7 +399,6 @@ class ThemeMaker(ctk.CTkToplevel):
         cursor = conn.cursor()
         cursor.execute("SELECT theme_path FROM users WHERE id = ?", (user_id,))
         result = cursor.fetchone()
-        print(result[0])
         conn.close()
 
         if result[0] and os.path.exists(result[0]):
@@ -411,7 +410,7 @@ class ThemeMaker(ctk.CTkToplevel):
             self.main.set_theme(theme_path)
         except Exception as e:
             ctkm.CTkMessagebox(title="Error", message=f"Failed to apply theme: {e}")
-            self.main.set_theme("green")
+            self.main.set_theme("blue")
 
     def replace_color(self, color, button, mode):
         """ replace a specific color """
