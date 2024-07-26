@@ -8,6 +8,9 @@ import os
 import subprocess
 import sys
 import copy
+from utils.database import get_db
+from gui.login import Login
+from gui.main import Main
 
 class ThemeMaker(ctk.CTkToplevel):
     # --------------------Main Structure of the Theme File--------------------#
@@ -264,9 +267,9 @@ class ThemeMaker(ctk.CTkToplevel):
                                                command=self.show_colors)
         self.palette.grid(row=4, column=0, columnspan=3, sticky="nswe", padx=(20, 5), pady=(0, 20))
 
-        self.quick_test = ctk.CTkButton(master=self, height=40, width=110, text="QUICK TEST",
-                                                  command=self.test)
-        self.quick_test.grid(row=4, column=3, columnspan=3, sticky="nswe", padx=(5, 20), pady=(0, 20))
+        self.user_theme_button = ctk.CTkButton(master=self, height=40, width=110, text="SELECT USER THEME",
+                                                  command=self.select_theme)
+        self.user_theme_button.grid(row=4, column=3, columnspan=3, sticky="nswe", padx=(5, 20), pady=(0, 20))
 
         self.update(None)
 
@@ -375,29 +378,40 @@ class ThemeMaker(ctk.CTkToplevel):
                 self.json_data[self.current][i][1] = "transparent"
                 self.button_dark.configure(fg_color="transparent")
 
-    def test(self):
-        """ function for quickly testing the theme """
-        DIRPATH = os.path.dirname(os.path.abspath(__file__))
+    def select_theme(self):
+        """ function for selecting the users theme """
+        self.login = Login(self)
+        file_path = tkf.askopenfilename(filetypes=[('JSON Files', '*.json'), ('All Files', '*.*')])
+        if file_path:
+            user_id = self.login.get_id()
+            conn = get_db()
+            cursor = conn.cursor()
+            cursor.execute("UPDATE users SET theme_path = ? WHERE id = ?", (file_path, user_id))
+            conn.commit()
+            conn.close()
+            ctkm.CTkMessagebox(title="Success", message="Theme file path saved successfully")
+            self.apply_user_theme(user_id)
 
-        program = os.path.join(DIRPATH, "CTkExample.py")
+    def apply_user_theme(self, user_id):
+        """ Apply the theme based on the user's theme_path """
+        self.main = Main(self)
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT theme_path FROM users WHERE id = ?", (user_id,))
+        result = cursor.fetchone()
+        print(result[0])
+        conn.close()
 
-        if not os.path.exists(program):
-            ctkm.CTkMessagebox(title="Sorry!", message="Cannot test the theme, example program is missing!")
-            return
-
-        export_data = copy.deepcopy(self.json_data)
-        for i in export_data:
-            for j in export_data[i]:
-                if export_data[i][j] == ["transparent", "transparent"]:
-                    export_data[i][j] = "transparent"
-
-        with open(os.path.join(DIRPATH, "CTkTheme_test.json"), "w") as f:
-            json.dump(export_data, f, indent=2)
-
-        if sys.platform.startswith("win"):
-            subprocess.run(["python", program])
+        if result[0] and os.path.exists(result[0]):
+            theme_path = result[0]
         else:
-            subprocess.run(["python3", program])
+            theme_path = 'themes/default.json'
+
+        try:
+            self.main.set_theme(theme_path)
+        except Exception as e:
+            ctkm.CTkMessagebox(title="Error", message=f"Failed to apply theme: {e}")
+            self.main.set_theme("green")
 
     def replace_color(self, color, button, mode):
         """ replace a specific color """
