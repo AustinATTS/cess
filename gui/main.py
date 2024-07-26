@@ -65,6 +65,9 @@ class Main:
     def appearance(self, appearance: str):
         ctk.set_appearance_mode(appearance.lower())
 
+    def set_theme(self, theme_path):
+        ctk.set_default_color_theme(theme_path)
+
     def clear_page(self):
         self.navigation_frame.destroy()
         self.content_frame.destroy()
