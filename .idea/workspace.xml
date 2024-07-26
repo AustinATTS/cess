@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/backups/backup_1721858899.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -167,54 +168,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00108" summary="uvf">
-      <option name="closed" value="true" />
-      <created>1721779965379</created>
-      <option name="number" value="00108" />
-      <option name="presentableId" value="LOCAL-00108" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779965379</updated>
-    </task>
-    <task id="LOCAL-00109" summary="Added function to create random data for testing and demonstrative purposes (Participants and teams)">
-      <option name="closed" value="true" />
-      <created>1721779994576</created>
-      <option name="number" value="00109" />
-      <option name="presentableId" value="LOCAL-00109" />
-      <option name="project" value="LOCAL" />
-      <updated>1721779994576</updated>
-    </task>
-    <task id="LOCAL-00110" summary="Added random event making">
-      <option name="closed" value="true" />
-      <created>1721780148372</created>
-      <option name="number" value="00110" />
-      <option name="presentableId" value="LOCAL-00110" />
-      <option name="project" value="LOCAL" />
-      <updated>1721780148372</updated>
-    </task>
-    <task id="LOCAL-00111" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721780154339</created>
-      <option name="number" value="00111" />
-      <option name="presentableId" value="LOCAL-00111" />
-      <option name="project" value="LOCAL" />
-      <updated>1721780154339</updated>
-    </task>
-    <task id="LOCAL-00112" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721780424947</created>
-      <option name="number" value="00112" />
-      <option name="presentableId" value="LOCAL-00112" />
-      <option name="project" value="LOCAL" />
-      <updated>1721780424947</updated>
-    </task>
-    <task id="LOCAL-00113" summary="Add users so can sign in &#10;user - atts&#10;judge - atts&#10;admin - atts&#10;&#10;roles dont do anything yet">
-      <option name="closed" value="true" />
-      <created>1721780455007</created>
-      <option name="number" value="00113" />
-      <option name="presentableId" value="LOCAL-00113" />
-      <option name="project" value="LOCAL" />
-      <updated>1721780455007</updated>
     </task>
     <task id="LOCAL-00114" summary="Fixed entry box updating (added team variable">
       <option name="closed" value="true" />
@@ -560,7 +513,55 @@
       <option name="project" value="LOCAL" />
       <updated>1721932371781</updated>
     </task>
-    <option name="localTasksCounter" value="157" />
+    <task id="LOCAL-00157" summary="if __name__">
+      <option name="closed" value="true" />
+      <created>1721933215784</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933215784</updated>
+    </task>
+    <task id="LOCAL-00158" summary="N/A">
+      <option name="closed" value="true" />
+      <created>1721933227325</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933227325</updated>
+    </task>
+    <task id="LOCAL-00159" summary="Added theme_path to users">
+      <option name="closed" value="true" />
+      <created>1721933245389</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933245389</updated>
+    </task>
+    <task id="LOCAL-00160" summary="Added theme_path to users">
+      <option name="closed" value="true" />
+      <created>1721933250296</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933250296</updated>
+    </task>
+    <task id="LOCAL-00161" summary="Spacing">
+      <option name="closed" value="true" />
+      <created>1721933258295</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933258295</updated>
+    </task>
+    <task id="LOCAL-00162" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1721933264180</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1721933264180</updated>
+    </task>
+    <option name="localTasksCounter" value="163" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -575,10 +576,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added v0.4.0" />
-    <MESSAGE value="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores" />
-    <MESSAGE value="Added v0.4.1" />
-    <MESSAGE value="Added new imports" />
     <MESSAGE value="Generic reports based off test data" />
     <MESSAGE value="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer" />
     <MESSAGE value="Updated title" />
@@ -599,6 +596,10 @@
     <MESSAGE value="Added a call to display theme maker" />
     <MESSAGE value="Updated colour scheme function call" />
     <MESSAGE value="Added scale settings" />
+    <MESSAGE value="if __name__" />
+    <MESSAGE value="N/A" />
+    <MESSAGE value="Added theme_path to users" />
+    <MESSAGE value="Spacing" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
