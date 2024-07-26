@@ -21,7 +21,7 @@ class Login:
         self.password_label = ctk.CTkLabel(frame, text="Password", anchor="w")
 
         self.username_entry = ctk.CTkEntry(frame, width=230, height=50)
-        self.password_entry = ctk.CTkEntry(frame, width=230, height=50)
+        self.password_entry = ctk.CTkEntry(frame, width=230, height=50, show='*')
 
         self.submit_button = ctk.CTkButton(frame, text="Submit", command=authenticate)
 
@@ -44,6 +44,9 @@ class Login:
         conn.close()
 
         if user:
+            self.user_id = user[0]
+            global user_id
+            user_id = self.user_id
             self.submit(frame)
         else:
             ctkm.CTkMessagebox(title="Error", message="Invalid username or password", icon="cancel")
@@ -62,3 +65,8 @@ class Login:
         self.username_entry.destroy()
         self.password_entry.destroy()
         self.submit_button.destroy()
+
+    def get_id(self):
+        id = user_id
+        return id
+
