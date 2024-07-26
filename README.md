@@ -54,6 +54,12 @@ v0.6.0 - Backups
 v0.6.1 - Restore Latest
 v0.6.2 - Restore Custom
 
+v0.7.0 - Customisation
+v0.7.1 - Scale
+v0.7.2 - Colour Themes
+
+v1.0.0 - 'Working' Release
+
 ------------------------------------------------------------------------------------------------------------
 Terms & Conditions!
 
