@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
-      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
-    </list>
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -165,46 +162,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00121" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721834838987</created>
-      <option name="number" value="00121" />
-      <option name="presentableId" value="LOCAL-00121" />
-      <option name="project" value="LOCAL" />
-      <updated>1721834838987</updated>
-    </task>
-    <task id="LOCAL-00122" summary="Added the ability to sort the ranks in the list as well as generate a compiled version summing the scores">
-      <option name="closed" value="true" />
-      <created>1721834908054</created>
-      <option name="number" value="00122" />
-      <option name="presentableId" value="LOCAL-00122" />
-      <option name="project" value="LOCAL" />
-      <updated>1721834908054</updated>
-    </task>
-    <task id="LOCAL-00123" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721834915797</created>
-      <option name="number" value="00123" />
-      <option name="presentableId" value="LOCAL-00123" />
-      <option name="project" value="LOCAL" />
-      <updated>1721834915797</updated>
-    </task>
-    <task id="LOCAL-00124" summary="Added v0.4.1">
-      <option name="closed" value="true" />
-      <created>1721835571864</created>
-      <option name="number" value="00124" />
-      <option name="presentableId" value="LOCAL-00124" />
-      <option name="project" value="LOCAL" />
-      <updated>1721835571864</updated>
-    </task>
-    <task id="LOCAL-00125" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721835579814</created>
-      <option name="number" value="00125" />
-      <option name="presentableId" value="LOCAL-00125" />
-      <option name="project" value="LOCAL" />
-      <updated>1721835579814</updated>
     </task>
     <task id="LOCAL-00126" summary="Added new imports">
       <option name="closed" value="true" />
@@ -558,7 +515,47 @@
       <option name="project" value="LOCAL" />
       <updated>1722037039046</updated>
     </task>
-    <option name="localTasksCounter" value="170" />
+    <task id="LOCAL-00170" summary="default theme">
+      <option name="closed" value="true" />
+      <created>1722037686099</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037686099</updated>
+    </task>
+    <task id="LOCAL-00171" summary="removed unnecessary print&#10;set main to blue if error">
+      <option name="closed" value="true" />
+      <created>1722037720945</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037720946</updated>
+    </task>
+    <task id="LOCAL-00172" summary="Added theme import when login">
+      <option name="closed" value="true" />
+      <created>1722037733078</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037733078</updated>
+    </task>
+    <task id="LOCAL-00173" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1722037744016</created>
+      <option name="number" value="00173" />
+      <option name="presentableId" value="LOCAL-00173" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037744016</updated>
+    </task>
+    <task id="LOCAL-00174" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1722037766320</created>
+      <option name="number" value="00174" />
+      <option name="presentableId" value="LOCAL-00174" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037766320</updated>
+    </task>
+    <option name="localTasksCounter" value="175" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,9 +570,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Generic report" />
-    <MESSAGE value="Added an event directory" />
-    <MESSAGE value="Updated structure" />
     <MESSAGE value="Added v0.5.0 (missed) and v0.5.1" />
     <MESSAGE value="Created the function to save a backup" />
     <MESSAGE value="Test backup" />
@@ -592,11 +586,14 @@
     <MESSAGE value="N/A" />
     <MESSAGE value="Added theme_path to users" />
     <MESSAGE value="Spacing" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Sends user_id" />
     <MESSAGE value="Applies theme" />
     <MESSAGE value="Saves and loads theme" />
     <MESSAGE value="Test themes (3 is good for test purposes" />
+    <MESSAGE value="default theme" />
+    <MESSAGE value="removed unnecessary print&#10;set main to blue if error" />
+    <MESSAGE value="Added theme import when login" />
+    <MESSAGE value="Test data" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
