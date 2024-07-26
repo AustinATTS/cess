@@ -3,6 +3,7 @@ import CTkMessagebox as ctkm
 from gui.main import Main
 import hashlib
 from utils.database import get_db
+import os
 
 class Login:
     def __init__(self, app):
@@ -51,7 +52,27 @@ class Login:
         else:
             ctkm.CTkMessagebox(title="Error", message="Invalid username or password", icon="cancel")
 
+    def apply_user_theme(self, user_id):
+        """ Apply the theme based on the user's theme_path """
+        self.main = Main(self)
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT theme_path FROM users WHERE id = ?", (user_id,))
+        result = cursor.fetchone()
+        conn.close()
+
+        if result[0] and os.path.exists(result[0]):
+            theme_path = result[0]
+        else:
+            theme_path = 'themes/default.json'
+
+        try:
+            self.main.set_theme(theme_path)
+        except Exception as e:
+            self.main.set_theme("blue")
+
     def submit(self, frame):
+        self.apply_user_theme(user_id)
         self.clear_page()
         self.app.geometry(f"{1000}x{580}")
         self.main = Main(self.app)
