@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -162,22 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00126" summary="Added new imports">
-      <option name="closed" value="true" />
-      <created>1721840322880</created>
-      <option name="number" value="00126" />
-      <option name="presentableId" value="LOCAL-00126" />
-      <option name="project" value="LOCAL" />
-      <updated>1721840322880</updated>
-    </task>
-    <task id="LOCAL-00127" summary="Generic reports based off test data">
-      <option name="closed" value="true" />
-      <created>1721840339497</created>
-      <option name="number" value="00127" />
-      <option name="presentableId" value="LOCAL-00127" />
-      <option name="project" value="LOCAL" />
-      <updated>1721840339497</updated>
     </task>
     <task id="LOCAL-00128" summary="CTkPDFViewer from Akascape&#10;https://github.com/Akascape/CTkPDFViewer">
       <option name="closed" value="true" />
@@ -555,7 +541,23 @@
       <option name="project" value="LOCAL" />
       <updated>1722037766320</updated>
     </task>
-    <option name="localTasksCounter" value="175" />
+    <task id="LOCAL-00175" summary="Added new and upcoming verison(s)">
+      <option name="closed" value="true" />
+      <created>1722037980055</created>
+      <option name="number" value="00175" />
+      <option name="presentableId" value="LOCAL-00175" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037980055</updated>
+    </task>
+    <task id="LOCAL-00176" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1722037990196</created>
+      <option name="number" value="00176" />
+      <option name="presentableId" value="LOCAL-00176" />
+      <option name="project" value="LOCAL" />
+      <updated>1722037990196</updated>
+    </task>
+    <option name="localTasksCounter" value="177" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -570,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added v0.5.0 (missed) and v0.5.1" />
     <MESSAGE value="Created the function to save a backup" />
     <MESSAGE value="Test backup" />
     <MESSAGE value="Added restore_latest()" />
@@ -594,6 +595,7 @@
     <MESSAGE value="removed unnecessary print&#10;set main to blue if error" />
     <MESSAGE value="Added theme import when login" />
     <MESSAGE value="Test data" />
+    <MESSAGE value="Added new and upcoming verison(s)" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
