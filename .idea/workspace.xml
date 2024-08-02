@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,38 +164,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00134" summary="Added an event directory">
-      <option name="closed" value="true" />
-      <created>1721855399020</created>
-      <option name="number" value="00134" />
-      <option name="presentableId" value="LOCAL-00134" />
-      <option name="project" value="LOCAL" />
-      <updated>1721855399020</updated>
-    </task>
-    <task id="LOCAL-00135" summary="Test data">
-      <option name="closed" value="true" />
-      <created>1721855408573</created>
-      <option name="number" value="00135" />
-      <option name="presentableId" value="LOCAL-00135" />
-      <option name="project" value="LOCAL" />
-      <updated>1721855408573</updated>
-    </task>
-    <task id="LOCAL-00136" summary="Updated structure">
-      <option name="closed" value="true" />
-      <created>1721855423147</created>
-      <option name="number" value="00136" />
-      <option name="presentableId" value="LOCAL-00136" />
-      <option name="project" value="LOCAL" />
-      <updated>1721855423147</updated>
-    </task>
-    <task id="LOCAL-00137" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721855434689</created>
-      <option name="number" value="00137" />
-      <option name="presentableId" value="LOCAL-00137" />
-      <option name="project" value="LOCAL" />
-      <updated>1721855434689</updated>
     </task>
     <task id="LOCAL-00138" summary=".idea">
       <option name="closed" value="true" />
@@ -559,7 +525,39 @@
       <option name="project" value="LOCAL" />
       <updated>1722556840954</updated>
     </task>
-    <option name="localTasksCounter" value="183" />
+    <task id="LOCAL-00183" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1722557404186</created>
+      <option name="number" value="00183" />
+      <option name="presentableId" value="LOCAL-00183" />
+      <option name="project" value="LOCAL" />
+      <updated>1722557404186</updated>
+    </task>
+    <task id="LOCAL-00184" summary="Test data">
+      <option name="closed" value="true" />
+      <created>1722557408674</created>
+      <option name="number" value="00184" />
+      <option name="presentableId" value="LOCAL-00184" />
+      <option name="project" value="LOCAL" />
+      <updated>1722557408675</updated>
+    </task>
+    <task id="LOCAL-00185" summary="Updated height to 250 so it fits all the options">
+      <option name="closed" value="true" />
+      <created>1722557424444</created>
+      <option name="number" value="00185" />
+      <option name="presentableId" value="LOCAL-00185" />
+      <option name="project" value="LOCAL" />
+      <updated>1722557424444</updated>
+    </task>
+    <task id="LOCAL-00186" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1722557432517</created>
+      <option name="number" value="00186" />
+      <option name="presentableId" value="LOCAL-00186" />
+      <option name="project" value="LOCAL" />
+      <updated>1722557432517</updated>
+    </task>
+    <option name="localTasksCounter" value="187" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -574,7 +572,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Created the function to save a backup" />
     <MESSAGE value="Test backup" />
     <MESSAGE value="Added restore_latest()" />
     <MESSAGE value="Added restore_custom()" />
@@ -596,8 +593,9 @@
     <MESSAGE value="default theme" />
     <MESSAGE value="removed unnecessary print&#10;set main to blue if error" />
     <MESSAGE value="Added theme import when login" />
-    <MESSAGE value="Test data" />
     <MESSAGE value="Added new and upcoming verison(s)" />
+    <MESSAGE value="Test data" />
+    <MESSAGE value="Updated height to 250 so it fits all the options" />
     <MESSAGE value=".idea" />
     <option name="LAST_COMMIT_MESSAGE" value=".idea" />
   </component>
