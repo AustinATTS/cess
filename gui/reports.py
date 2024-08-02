@@ -119,7 +119,7 @@ class Reports:
             self.refresh_listbox()
 
         report_toplevel = ctk.CTkToplevel()
-        report_toplevel.geometry("300x200")
+        report_toplevel.geometry(f"{300}x{250}")
         report_toplevel.title("Generate Report")
 
         ctk.CTkLabel(report_toplevel, text="Select Report Type").pack(pady=20)
