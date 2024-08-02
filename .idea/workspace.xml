@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment=".idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,14 +166,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00133" summary="Generic report">
-      <option name="closed" value="true" />
-      <created>1721855368792</created>
-      <option name="number" value="00133" />
-      <option name="presentableId" value="LOCAL-00133" />
-      <option name="project" value="LOCAL" />
-      <updated>1721855368792</updated>
     </task>
     <task id="LOCAL-00134" summary="Added an event directory">
       <option name="closed" value="true" />
@@ -557,7 +551,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722371852641</updated>
     </task>
-    <option name="localTasksCounter" value="182" />
+    <task id="LOCAL-00182" summary=".idea">
+      <option name="closed" value="true" />
+      <created>1722556840953</created>
+      <option name="number" value="00182" />
+      <option name="presentableId" value="LOCAL-00182" />
+      <option name="project" value="LOCAL" />
+      <updated>1722556840954</updated>
+    </task>
+    <option name="localTasksCounter" value="183" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
