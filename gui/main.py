@@ -10,6 +10,7 @@ from gui.participants import Participants
 from gui.rankings import Rankings
 from gui.reports import Reports
 from gui.scores import Scores
+from utils.database import get_db
 
 
 class Main:
@@ -30,7 +31,7 @@ class Main:
         self.content_frame = ctk.CTkFrame(frame, width=750, corner_radius=0)
         self.content_frame.grid(row=0, column=1, rowspan=4, sticky="nsew")
 
-        self.logo = ctk.CTkImage(Image.open(os.path.join("assets", "icons", "logo.png")), size=(160, 165))
+        self.logo = ctk.CTkImage(Image.open(os.path.join("assets", "icons", "logo.png")), size=(100, 103))
 
         self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo)
         self.title_label = ctk.CTkLabel(self.navigation_frame, text="College Event Score\nSystem", font=ctk.CTkFont(size=20, weight="bold"))
@@ -61,6 +62,27 @@ class Main:
         self.feedback_label.bind("<Button-1>", lambda event: self.feedback())
         self.feedback_label.bind("<Enter>", lambda event: self.feedback_label.configure(font=("", 13, "underline"), cursor="hand2"))
         self.feedback_label.bind("<Leave>", lambda event: self.feedback_label.configure(font=("", 13), cursor="arrow"))
+
+        user_id = self.app.login.user_id
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT role FROM users WHERE id = ?", (user_id,))
+        self.role = str(cursor.fetchone())
+        conn.close()
+
+        role = self.role
+        if role == "('Viewer',)":
+            self.participants_button.configure(state="disabled")
+            self.reports_button.configure(state="disabled")
+            self.app.file_dropdown.configure(state="disabled")
+            self.app.file_sub_menu.configure(state="disabled")
+        elif role == "('Judge',)":
+            self.app.file_dropdown.configure(state="normal")
+            self.app.file_sub_menu.configure(state="disabled")
+        elif role == "('Admin',)":
+            self.app.file_dropdown.configure(state="normal")
+            self.app.file_sub_menu.configure(state="normal")
+            self.logo_label.bind("<Button-1>", lambda event: self.config())
 
     def appearance(self, appearance: str):
         ctk.set_appearance_mode(appearance.lower())
@@ -95,6 +117,10 @@ class Main:
     def report(self):
         self.clear(self.content_frame)
         self.reports.load_page(self.content_frame)
+
+    def config(self):
+        # TODO add config menu to add users, init db, and other admin features
+        print("Yes")
 
     def feedback(self):
 

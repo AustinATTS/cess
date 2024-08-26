@@ -79,6 +79,22 @@ class Events:
 
         self.refresh_listbox()
 
+        user_id = self.app.app.login.user_id
+        conn = get_db()
+        cursor = conn.cursor()
+        cursor.execute("SELECT role FROM users WHERE id = ?", (user_id,))
+        role = str(cursor.fetchone())
+        conn.close()
+
+        if role == "('Viewer',)":
+            self.id_entry.configure(state="disabled")
+            self.name_entry.configure(state="disabled")
+            self.type_entry.configure(state="disabled")
+            self.date_entry.configure(state="disabled")
+            self.location_entry.configure(state="disabled")
+            self.add_update_button.configure(state="disabled")
+            self.delete_button.configure(state="disabled")
+
     def get_events(self):
         conn = get_db()
         cursor = conn.cursor()
