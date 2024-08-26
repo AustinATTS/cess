@@ -30,7 +30,7 @@ class Main:
         self.content_frame = ctk.CTkFrame(frame, width=750, corner_radius=0)
         self.content_frame.grid(row=0, column=1, rowspan=4, sticky="nsew")
 
-        self.logo = ctk.CTkImage(Image.open(os.path.join("assets", "icons", "logo.jpg")), size=(100, 100))
+        self.logo = ctk.CTkImage(Image.open(os.path.join("assets", "icons", "logo.png")), size=(160, 165))
 
         self.logo_label = ctk.CTkLabel(self.navigation_frame, text="", image=self.logo)
         self.title_label = ctk.CTkLabel(self.navigation_frame, text="College Event Score\nSystem", font=ctk.CTkFont(size=20, weight="bold"))
@@ -117,6 +117,8 @@ class Main:
         feedback_toplevel = ctk.CTkToplevel()
         feedback_toplevel.title("Feedback Form")
         feedback_toplevel.geometry(f"{350}x{312}")
+
+        feedback_toplevel.after(250, lambda: feedback_toplevel.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
 
         title_label = ctk.CTkLabel(feedback_toplevel, text="Feedback Form", font=ctk.CTkFont(size=20, weight="bold"))
         subject_label = ctk.CTkLabel(feedback_toplevel, text="Subject", anchor="w")

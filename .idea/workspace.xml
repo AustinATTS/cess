@@ -4,8 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Test data produced from test video">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Removed edit functions as not needed">
+      <change afterPath="$PROJECT_DIR$/assets/icons/logo.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/icons/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/icons/logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backups/backup_1722556987.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backups/backup_1722557056.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backups/backup_1722559190.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Event_Directory_1721855160.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Event_Directory_1722559542.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Participant_Report_1721839951.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Participant_Report_1722557040.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Score_Report_1721840195.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Score_Report_1722559538.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Team_Report_1721840193.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/Team_Report_1722559541.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/2.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/3.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/Untitled.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/default.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/themes/test-123.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/random_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/random_data.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +54,12 @@
     &quot;assignee&quot;: &quot;AustinATTS&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AustinATTS/cess.git",
-    "accountId": "74008ea7-4b66-4c7f-b43f-05766fd32df0"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AustinATTS/cess.git&quot;,
+    &quot;accountId&quot;: &quot;74008ea7-4b66-4c7f-b43f-05766fd32df0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;f76000ff&quot;,
   &quot;associatedIndex&quot;: 0
@@ -47,30 +72,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.College Event Score System.executor": "Run",
-    "Python.ThemeMaker.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.file.executor": "Run",
-    "Python.login.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.random_data.executor": "Run",
-    "Python.rankings.executor": "Run",
-    "Python.reports.executor": "Run",
-    "Python.scores.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ThemeMaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\assets\icons" />
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess" />
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess\assets" />
     </key>
@@ -165,14 +191,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00140" summary="Added v0.5.0 (missed) and v0.5.1">
-      <option name="closed" value="true" />
-      <created>1721856998521</created>
-      <option name="number" value="00140" />
-      <option name="presentableId" value="LOCAL-00140" />
-      <option name="project" value="LOCAL" />
-      <updated>1721856998521</updated>
     </task>
     <task id="LOCAL-00141" summary="Created the function to save a backup">
       <option name="closed" value="true" />
@@ -558,7 +576,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722560034964</updated>
     </task>
-    <option name="localTasksCounter" value="189" />
+    <task id="LOCAL-00189" summary="Removed edit functions as not needed">
+      <option name="closed" value="true" />
+      <created>1724670823519</created>
+      <option name="number" value="00189" />
+      <option name="presentableId" value="LOCAL-00189" />
+      <option name="project" value="LOCAL" />
+      <updated>1724670823520</updated>
+    </task>
+    <option name="localTasksCounter" value="190" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -573,7 +599,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added restore_latest()" />
     <MESSAGE value="Added restore_custom()" />
     <MESSAGE value="Added v0.6." />
     <MESSAGE value="Added a workaround to allow logout" />
@@ -598,6 +623,7 @@
     <MESSAGE value="Updated height to 250 so it fits all the options" />
     <MESSAGE value=".idea" />
     <MESSAGE value="Test data produced from test video" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test data produced from test video" />
+    <MESSAGE value="Removed edit functions as not needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Removed edit functions as not needed" />
   </component>
 </project>

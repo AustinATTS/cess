@@ -16,6 +16,7 @@ class App(ctk.CTk):
 
         self.title("College Event Score System")
         self.geometry(f"{self.original_width}x{self.original_height}")
+        self.iconbitmap("assets/icons/logo.ico")
 
         self.grid_columnconfigure(1, weight=1)
         self.grid_columnconfigure((2, 3), weight=0)

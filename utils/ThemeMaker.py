@@ -210,6 +210,7 @@ class ThemeMaker(ctk.CTkToplevel):
         ctk.set_default_color_theme("blue")
         self.title("CustomTkinter ThemeMaker")
         self.geometry("500x450")
+        self.after(250, lambda: self.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
         self.protocol("WM_DELETE_WINDOW", self.on_closing)
         self.grid_columnconfigure((0, 1, 2, 3, 4, 5), weight=1)
         self.grid_rowconfigure(2, weight=1)

@@ -3,6 +3,7 @@ import CTkMessagebox as ctkm
 import os
 
 def get_db():
+    # TODO Get workaround so "..", isn't needed when first initializing db
     database_path = os.path.join("data", "database.db")
     try:
         conn = sqlite3.connect(database_path)
