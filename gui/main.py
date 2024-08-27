@@ -193,9 +193,9 @@ class Main:
         user_codebox.insert("0.0", add_user_code)
 
         database_codebox = ctkcb.CTkCodeBox(example_scrollable_frame, language="python", width=800, height=1260)
-        database_codebox.grid(row=1, column=0, pady=10, padx=20)
+        database_codebox.grid(row=2, column=0, pady=10, padx=20)
 
-        initialise_database__code = """# Example Code To Initialise A New Database
+        initialise_database_code = """# Example Code To Initialise A New Database
 
 import sqlite3
 import os
@@ -279,12 +279,12 @@ init_db(os.path.join("path", "to", "database.db")
 
         """
 
-        database_codebox.insert("0.0", initialise_database__code)
+        database_codebox.insert("0.0", initialise_database_code)
 
         path_codebox = ctkcb.CTkCodeBox(example_scrollable_frame, language="python", width=800, height=250)
-        path_codebox.grid(row=2, column=0, pady=(10, 20), padx=20)
+        path_codebox.grid(row=4, column=0, pady=10, padx=20)
 
-        change_database__code = """# Example Code To Change Database Path
+        change_database_code = """# Example Code To Change Database Path
 import os
 
 path_to_file = os.path.join("path", "to", "database.py")
@@ -301,7 +301,37 @@ with open(path_to_file, 'w') as file:
 	file.writelines(lines)
                 """
 
-        path_codebox.insert("0.0", change_database__code)
+        path_codebox.insert("0.0", change_database_code)
+
+        add_user_description = """
+        The add user script acts as a way for you to add a large group of new users. for this you need to ensure that the path to your database is configured correctly. Normally this will be set as "data", "database.db" however if you have made any changes to this path with the provided script below, this will need to be changed accordingly.\n\nSecondly you need to change the content within the users array, ensuring correct spelling and case as it is case sensitive. Also make sure that the role is either Viewer, Judge, or Admin to ensure that the permision validation will work for each account.\n\nOnce these have been changed. Run the command in the terminal and double check it has worked as intended.
+        """
+
+        initialise_database_description = """
+        The initialise database script acts as a way to easily create new and empty databases following the same schema as the required db for this program. This allows you to create a new database in a custom location, preferably a cloud location which can be accessed by all users from the same path so that there are concurrent updates with all data.\n\nTo use this you will need to change the database path when calling the function. This can either be the local path as displayed or can be the absolute path with some simple changes using the os import. Additionally if needed for reuse, with alterations with number of teams or member counts etc., this can easily be done with some simple changes to the triggers, which could then be applied to the current database with an IF NOT EXISTS statement being added to it.
+        """
+
+        change_database_description = """
+        The change database path script goes directly into the source code for this program and changes the database path in its central location which would take effect throughout the entire application after a restart. The path to the file should be the direct path to the database.py file which is normally located in utils being "utils", "database.py". The line_to_edit should be 5 as it is the 6th line in the file (using a base of 0) where the daabase path is stored. The updated database path should lead to an already initialised database for quicker loading and should be the relative path unless the os.path.join function is changed.\n\nIt is important to note that the spacing at the start of the new content should be four spaces rather than being a single indent (tab key) as the terminal uses a different indent scale.
+        """
+
+        add_user_description_frame = ctk.CTkTextbox(example_scrollable_frame, width=800, height=100, state="disabled")
+        add_user_description_frame.grid(row=1, column=0, pady=10, padx=20)
+
+        initialise_database_description_frame = ctk.CTkTextbox(example_scrollable_frame, width=800, height=100, state="disabled")
+        initialise_database_description_frame.grid(row=3, column=0, pady=10, padx=20)
+
+        change_database_description_frame = ctk.CTkTextbox(example_scrollable_frame, width=800, height=100, state="disabled")
+        change_database_description_frame.grid(row=5, column=0, pady=10, padx=20)
+
+        add_user_description_label = ctk.CTkLabel(add_user_description_frame, text=add_user_description, width=800, height=100, wraplength=800, justify="left")
+        add_user_description_label.grid(row=0, column=0)
+
+        initialise_database_description_label = ctk.CTkLabel(initialise_database_description_frame, text=initialise_database_description, width=800, height=100, wraplength=800, justify="left")
+        initialise_database_description_label.grid(row=0, column=0)
+
+        change_database_description_label = ctk.CTkLabel(change_database_description_frame, text=change_database_description, width=800, height=100, wraplength=800, justify="left")
+        change_database_description_label.grid(row=0, column=0)
 
 
     def feedback(self):
