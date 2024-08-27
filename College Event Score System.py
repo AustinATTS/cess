@@ -5,7 +5,6 @@ import CTkMessagebox as ctkm
 from utils.file import save, restore_latest, restore_custom
 from utils.settings import colour_scheme, scale, logout
 from utils.about import website, github, description
-from utils.database import get_db
 
 
 class App(ctk.CTk):

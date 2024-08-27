@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Started on the admin config, can access a fully working python terminal (need to make look nicer), with &quot;working&quot; example code to add users, initialise database, and change main database path">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -158,7 +160,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-ce3d9afa04ac-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.347" />
+        <option value="bundled-python-sdk-abccbe9d933a-ba05f1cad1b1-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.20224.428" />
       </set>
     </attachedChunks>
   </component>
@@ -170,14 +172,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00144" summary="Added restore_latest()">
-      <option name="closed" value="true" />
-      <created>1721859888070</created>
-      <option name="number" value="00144" />
-      <option name="presentableId" value="LOCAL-00144" />
-      <option name="project" value="LOCAL" />
-      <updated>1721859888070</updated>
     </task>
     <task id="LOCAL-00145" summary="Added restore_custom()">
       <option name="closed" value="true" />
@@ -563,7 +557,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724791229497</updated>
     </task>
-    <option name="localTasksCounter" value="193" />
+    <task id="LOCAL-00193" summary="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more.">
+      <option name="closed" value="true" />
+      <created>1724799700714</created>
+      <option name="number" value="00193" />
+      <option name="presentableId" value="LOCAL-00193" />
+      <option name="project" value="LOCAL" />
+      <updated>1724799700714</updated>
+    </task>
+    <option name="localTasksCounter" value="194" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -578,7 +580,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a workaround to allow logout&#10;Added colour theme" />
     <MESSAGE value="Used Akascape thememaker, adjusting to be a toplevel" />
     <MESSAGE value="Added a call to display theme maker" />
     <MESSAGE value="Updated colour scheme function call" />
@@ -603,6 +604,7 @@
     <MESSAGE value="Removed Test data and added logos (replaced nav logo and added icon for CTk and CTkTopLevel)" />
     <MESSAGE value="Added user privalledged by disabeling setting based on a users role. added base for config menu" />
     <MESSAGE value="Started on the admin config, can access a fully working python terminal (need to make look nicer), with &quot;working&quot; example code to add users, initialise database, and change main database path" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started on the admin config, can access a fully working python terminal (need to make look nicer), with &quot;working&quot; example code to add users, initialise database, and change main database path" />
+    <MESSAGE value="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more." />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more." />
   </component>
 </project>

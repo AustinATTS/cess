@@ -1,7 +1,5 @@
 import customtkinter as ctk
-import CTkMenuBar as ctkmb
 import CTkMessagebox as ctkm
-from PIL.ImageOps import expand
 import assets.CTkCodeBox as ctkcb
 import tkinter as tk
 import io
@@ -127,16 +125,18 @@ class Main:
     def open_terminal(self):
         terminal_toplevel = ctk.CTkToplevel()
         terminal_toplevel.title("Terminal")
-        terminal_toplevel.geometry(f"{600}x{400}")
+        terminal_toplevel.geometry(f"{600}x{500}")
 
-        self.code_input = ctkcb.CTkCodeBox(terminal_toplevel, language="python")
-        self.code_input.pack(padx=10, pady=10, fill=tk.BOTH, expand=True)
+        terminal_toplevel.after(250, lambda: terminal_toplevel.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
 
-        self.output_text = scrolledtext.ScrolledText(terminal_toplevel, wrap=tk.WORD, height=10, bg="black", fg="white")
-        self.output_text.pack(padx=10, pady=(0, 10), fill=tk.BOTH, expand=True)
+        self.code_input = ctkcb.CTkCodeBox(terminal_toplevel, language="python", width=560, height=200)
+        self.code_input.grid(row=0, column=0, padx=20, pady=(20, 10))
+
+        self.output_text = ctkcb.CTkCodeBox(terminal_toplevel, language="python", height=150, bg_color="white", fg_color="black", width=560)
+        self.output_text.grid(row=1, column=0, padx=20, pady=10)
 
         execute_button = ctk.CTkButton(terminal_toplevel, text="Execute", command=self.execute_code)
-        execute_button.pack(pady=(0, 10))
+        execute_button.grid(row=2, column=0, padx=20, pady=(10, 20))
 
     def execute_code(self):
         code = self.code_input.get("1.0", tk.END)
