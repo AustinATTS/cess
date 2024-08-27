@@ -3,13 +3,12 @@ import CTkMessagebox as ctkm
 import os
 
 def get_db():
-    # TODO Get workaround so "..", isn't needed when first initializing db
     database_path = os.path.join("data", "database.db")
     try:
         conn = sqlite3.connect(database_path)
         return conn
-    except sqlite3.OperationalError as e:
-        ctkm.CTkMessagebox(title="Error", message=f"SQLite error: {e}", icon="cancel")
+    except Exception as e:
+        ctkm.CTkMessagebox(title="Error", message=f"Error: {e}", icon="cancel")
         raise
 
 

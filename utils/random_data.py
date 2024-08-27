@@ -130,4 +130,6 @@ def add_users():
     conn.close()
 
 if __name__ == "__main__":
-    add_users()
+    # add_users()
+    add_random_participants()
+    add_random_events()
