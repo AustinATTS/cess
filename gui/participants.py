@@ -3,6 +3,7 @@ import CTkListbox as ctkl
 import CTkMessagebox as ctkm
 from utils.database import get_db
 import time
+from utils.logging import logger
 
 
 class Participants:
@@ -92,6 +93,12 @@ class Participants:
     def add_participant(self, name, email, phone, team):
         if not self.can_add_to_team(team):
             ctkm.CTkMessagebox(title="Error", message="Cannot add participant. Team is full or invalid.", icon="cancel")
+            logger.warning(f"Participant {name} could not be added. The Team was full")
+            return
+
+        if name == "" or email == "" or team == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot add participant. Ensure there is a name, email and team assigned", icon="cancel")
+            logger.warning(f"Participant {name} could not be added. Insufficient data")
             return
 
         conn = get_db()
@@ -101,8 +108,14 @@ class Participants:
         cursor.execute("UPDATE teams SET member_count = member_count + 1 WHERE id = ?", (team,))
         conn.commit()
         conn.close()
+        logger.info(f"Participant {name} was added")
 
     def update_participant(self, participant_id, name, email, phone, team):
+        if name == "" or email == "" or team == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot update participant. Ensure there is a name, email and team assigned", icon="cancel")
+            logger.warning(f"Participant {name} could not be updated. Insufficient data")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
@@ -111,6 +124,7 @@ class Participants:
         if old_team != team and not self.can_add_to_team(team):
             ctkm.CTkMessagebox(title="Error", message="Cannot update participant. New team is full or invalid.",
                                icon="cancel")
+            logger.warning(f"Participant {name} could not be updated. Team Invalid")
             return
 
         cursor.execute("UPDATE participants SET name=?, email=?, phone=?, team_id=? WHERE id=?",
@@ -122,6 +136,7 @@ class Participants:
 
         conn.commit()
         conn.close()
+        logger.info(f"Participant {name} has been updated.")
 
     def delete_participant(self, participant_id):
         conn = get_db()
@@ -134,6 +149,7 @@ class Participants:
         cursor.execute("UPDATE teams SET member_count = member_count - 1 WHERE id = ?", (team,))
         conn.commit()
         conn.close()
+        logger.warning(f"Participant {participant_id} has been deleted.")
 
     def update_entry_fields(self, event):
         selected_item = self.participant_listbox.get(self.participant_listbox.curselection())

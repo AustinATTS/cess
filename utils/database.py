@@ -1,6 +1,7 @@
 import sqlite3
 import CTkMessagebox as ctkm
 import os
+from utils.logging import logger
 
 def get_db():
     database_path = os.path.join("data", "database.db")
@@ -9,6 +10,7 @@ def get_db():
         return conn
     except Exception as e:
         ctkm.CTkMessagebox(title="Error", message=f"Error: {e}", icon="cancel")
+        logger.warning(f"Error {e}")
         raise
 
 
@@ -17,33 +19,33 @@ def init_db():
     cursor = conn.cursor()
 
     cursor.execute('''CREATE TABLE IF NOT EXISTS users (
-                        id INTEGER PRIMARY KEY,
-                        username TEXT UNIQUE,
-                        password TEXT,
-                        role TEXT,
+                        id INTEGER PRIMARY KEY NOT NULL,
+                        username TEXT UNIQUE NOT NULL,
+                        password TEXT NOT NULL,
+                        role TEXT NOT NULL,
                         theme_path TEXT)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS participants (
-                        id INTEGER PRIMARY KEY,
-                        name TEXT,
-                        email TEXT,
+                        id INTEGER PRIMARY KEY NOT NULL,
+                        name TEXT NOT NULL,
+                        email TEXT NOT NULL,
                         phone TEXT,
-                        team_id INTEGER)''')
+                        team_id INTEGER NOT NULL)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS teams (
                         id INTEGER PRIMARY KEY,
                         name TEXT,
                         member_count INTEGER)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS events (
-                        id INTEGER PRIMARY KEY,
-                        name TEXT,
-                        type TEXT,
-                        date TEXT,
-                        location TEXT)''')
+                        id INTEGER PRIMARY KEY NOT NULL,
+                        name TEXT NOT NULL,
+                        type TEXT NOT NULL,
+                        date TEXT NOT NULL,
+                        location TEXT NOT NULL)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS scores (
-                        id INTEGER PRIMARY KEY,
-                        participant_id INTEGER,
-                        event_id INTEGER,
-                        score INTEGER,
-                        date TEXT,
+                        id INTEGER PRIMARY KEY NOT NULL,
+                        participant_id INTEGER NOT NULL,
+                        event_id INTEGER NOT NULL,
+                        score INTEGER NOT NULL,
+                        date TEXT NOT NULL,
                         team_id INTEGER)''')
     cursor.execute('''CREATE TABLE IF NOT EXISTS reports (
                         id INTEGER PRIMARY KEY,
@@ -85,6 +87,7 @@ def init_db():
 
     conn.commit()
     conn.close()
+    logger.info(f"Database Initialised")
 
 
 

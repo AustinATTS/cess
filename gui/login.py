@@ -4,6 +4,8 @@ from gui.main import Main
 import hashlib
 from utils.database import get_db
 import os
+import logging
+from utils.logging import logger
 
 class Login:
     def __init__(self, app):
@@ -49,7 +51,9 @@ class Login:
             global user_id
             user_id = self.user_id
             self.submit(frame)
+            logger.info(f"User {username} logged in.")
         else:
+            logger.warning(f"Failed login attempt for user {username}.")
             ctkm.CTkMessagebox(title="Error", message="Invalid username or password", icon="cancel")
 
     def apply_user_theme(self, user_id):

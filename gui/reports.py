@@ -6,6 +6,7 @@ from utils.database import get_db
 from fpdf import FPDF
 import time
 import os
+from utils.logging import logger
 
 
 class Reports:
@@ -118,9 +119,12 @@ class Reports:
 
             self.refresh_listbox()
 
+            logger.info(f"Report has been made {report_filename}")
+
         report_toplevel = ctk.CTkToplevel()
         report_toplevel.geometry(f"{300}x{250}")
         report_toplevel.title("Generate Report")
+        report_toplevel.after(250, lambda: report_toplevel.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
 
         ctk.CTkLabel(report_toplevel, text="Select Report Type").pack(pady=20)
         ctk.CTkButton(report_toplevel, text="Participant Report", command=lambda: create_report("Participant Report")).pack(pady=5)
@@ -146,6 +150,7 @@ class Reports:
         viewer_toplevel = ctk.CTkToplevel()
         viewer_toplevel.geometry("800x600")
         viewer_toplevel.title("View Report")
+        viewer_toplevel.after(250, lambda: viewer_toplevel.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
 
         pdf_viewer = ctkpdfv.CTkPDFViewer(viewer_toplevel, file=report_path, width=800, height=600)
         pdf_viewer.pack(expand=True, fill="both")

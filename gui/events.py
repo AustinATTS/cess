@@ -1,7 +1,9 @@
 import customtkinter as ctk
 import CTkListbox as ctkl
+import CTkMessagebox as ctkm
 from utils.database import get_db
 import time
+from utils.logging import logger
 
 class Events:
     def __init__(self, app):
@@ -104,20 +106,32 @@ class Events:
         return rows
 
     def add_event(self, name, type, date, location):
+        if name == "" or type == "" or date == "" or location == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot add event. Ensure there is a name, type, date and location0 assigned", icon="cancel")
+            logger.warning(f"Event could not be added, insufficient data")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("INSERT INTO events (name, type, date, location) VALUES (?, ?, ?, ?)",
                        (name, type, date, location))
         conn.commit()
         conn.close()
+        logger.info(f"event {name} has been added")
 
     def update_event(self, event_id, name, type, date, location):
+        if name == "" or type == "" or date == "" or location == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot update event. Ensure there is a name, type, date and location assigned", icon="cancel")
+            logger.warning(f"Event could not be updated, insufficient data")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("UPDATE events SET name=?, type=?, date=?, location=? WHERE id=?",
                        (name, type, date, location, event_id))
         conn.commit()
         conn.close()
+        logger.info(f"event {name} has been updated")
 
     def delete_event(self, event_id):
         conn = get_db()
@@ -125,6 +139,7 @@ class Events:
         cursor.execute("DELETE FROM events WHERE id=?", (event_id,))
         conn.commit()
         conn.close()
+        logger.info(f"event {event_id} has been deleted")
 
     def update_entry_fields(self, event):
         selected_item = self.event_listbox.get(self.event_listbox.curselection())

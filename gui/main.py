@@ -15,6 +15,7 @@ from gui.rankings import Rankings
 from gui.reports import Reports
 from gui.scores import Scores
 from utils.database import get_db
+from utils.logging import logger
 
 
 class Main:
@@ -144,13 +145,14 @@ class Main:
         redirected_output = sys.stdout = io.StringIO()
         try:
             exec(code)
+            logger.info(f"An internal program has been ran\n{code}")
         except Exception as e:
             print(f"Error: {e}")
+            logger.warning(f"Error executing program {e}")
         sys.stdout = old_stdout
         self.output_text.insert(tk.END, redirected_output.getvalue())
 
     def config(self):
-        # TODO add config menu to add users, init db, and other admin features
         config_toplevel = ctk.CTkToplevel()
         config_toplevel.title("Admin Config")
         config_toplevel.geometry(f"{894}x{900}")
@@ -349,8 +351,10 @@ with open(path_to_file, 'w') as file:
             if subject != "" and feedback != "":
                 webbrowser.open(mailto_link)
                 feedback_toplevel.destroy()
+                logger.info(f"Feedback has been submitted")
             else:
                 ctkm.CTkMessagebox(title="Error", message="Something went wrong!!!", icon="cancel")
+                logger.warning(f"Error with submitting feedback")
 
         feedback_toplevel = ctk.CTkToplevel()
         feedback_toplevel.title("Feedback Form")

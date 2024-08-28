@@ -4,6 +4,7 @@ import os
 import tkinter.filedialog as tkf
 import shutil
 import time
+from utils.logging import logger
 
 backup_dir = "backups"
 
@@ -17,8 +18,10 @@ def save():
         backup_filename = os.path.join(backup_dir, f"backup_{int(time.time())}.db")
         shutil.copyfile(os.path.join("data", "database.db"), backup_filename)
         ctkm.CTkMessagebox(title="Success", message=f"Backup saved to {backup_filename}")
+        logger.info(f"Backup saved to {backup_filename}")
     except Exception as e:
         ctkm.CTkMessagebox(title="Error", message=f"Failed to save backup: {e}")
+        logger.warning(f"Failed to save backup: {e}")
 
 def restore_latest():
     try:
@@ -29,13 +32,16 @@ def restore_latest():
         )
         if not backup_files:
             ctkm.CTkMessagebox(title="Warning", message="No backup files found.")
+            logger.warning(f"Failed backup attempt: None Found")
             return
 
         latest_backup = os.path.join(backup_dir, backup_files[0])
         shutil.copyfile(latest_backup, os.path.join("data", "database.db"))
         ctkm.CTkMessagebox(title="Success", message=f"Restored from latest backup: {latest_backup}")
+        logger.info(f"Backup Restored: {latest_backup}")
     except Exception as e:
         ctkm.CTkMessagebox(title="Error", message=f"Failed to restore from latest backup: {e}")
+        logger.warning(f"Failed backup attempt: {e}")
 
 
 def restore_custom():
@@ -50,5 +56,7 @@ def restore_custom():
 
         shutil.copyfile(custom_backup, os.path.join("data", "database.db"))
         ctkm.CTkMessagebox(title="Success", message=f"Restored from custom backup: {custom_backup}")
+        logger.info(f"Backup Restored: {custom_backup}")
     except Exception as e:
         ctkm.CTkMessagebox(title="Error", message=f"Failed to restore from custom backup: {e}")
+        logger.warning(f"Failed backup attempt: {e}")

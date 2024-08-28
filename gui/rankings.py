@@ -2,6 +2,8 @@ import customtkinter as ctk
 import CTkListbox as ctkl
 from utils.database import get_db
 import time
+import os
+from utils.logging import logger
 
 
 class Rankings:
@@ -65,12 +67,7 @@ class Rankings:
     def get_scores(self):
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("""
-        SELECT participants.name, events.name, scores.score, scores.date, participants.team_id
-        FROM scores
-        JOIN participants ON scores.participant_id = participants.id
-        JOIN events ON scores.event_id = events.id
-        """)
+        cursor.execute("SELECT participant_id, event_id, score, date, team_id FROM scores")
         rows = cursor.fetchall()
         conn.close()
         return rows
@@ -114,7 +111,7 @@ class Rankings:
 
         self.rankings = [(participant, total_score) for participant, total_score in individual_scores.items()]
         for team_id, total_score in team_scores.items():
-            self.rankings.append((f"Team {team_id}", total_score))
+            self.rankings.append((f"Team {team_id - 1}", total_score))
 
         self.rankings.sort(key=lambda x: (-x[1], x[0]))
 
@@ -127,6 +124,7 @@ class Rankings:
         top_level = ctk.CTkToplevel()
         top_level.geometry(f"{350}x{600}")
         top_level.title("Rankings")
+        top_level.after(250, lambda: top_level.iconbitmap(os.path.join("assets", "icons", "logo.ico")))
 
         rankings_frame = ctk.CTkFrame(top_level, width=350, height=600)
 

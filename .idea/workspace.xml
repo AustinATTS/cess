@@ -4,10 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more.">
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Made the terminal window look good">
+      <change afterPath="$PROJECT_DIR$/build_exe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/cess.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/cess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cess.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/file.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/random_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/random_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,28 +66,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
-    &quot;Python.ThemeMaker.executor&quot;: &quot;Run&quot;,
-    &quot;Python.config.executor&quot;: &quot;Run&quot;,
-    &quot;Python.database.executor&quot;: &quot;Run&quot;,
-    &quot;Python.file.executor&quot;: &quot;Run&quot;,
-    &quot;Python.login.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.random_data.executor&quot;: &quot;Run&quot;,
-    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
-    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess/assets&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.College Event Score System.executor": "Run",
+    "Python.ThemeMaker.executor": "Run",
+    "Python.build_exe.executor": "Run",
+    "Python.config.executor": "Run",
+    "Python.database.executor": "Run",
+    "Python.file.executor": "Run",
+    "Python.login.executor": "Run",
+    "Python.main (1).executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.random_data.executor": "Run",
+    "Python.rankings.executor": "Run",
+    "Python.reports.executor": "Run",
+    "Python.scores.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess/assets",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\assets" />
@@ -82,7 +100,7 @@
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess\assets" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.College Event Score System">
+  <component name="RunManager" selected="Python.build_exe">
     <configuration name="College Event Score System" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cess" />
       <option name="ENV_FILES" value="" />
@@ -97,6 +115,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/College Event Score System.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="build_exe" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="cess" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/build_exe.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -151,6 +191,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.build_exe" />
         <item itemvalue="Python.College Event Score System" />
         <item itemvalue="Python.random_data" />
         <item itemvalue="Python.database" />
@@ -172,14 +213,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00145" summary="Added restore_custom()">
-      <option name="closed" value="true" />
-      <created>1721859935334</created>
-      <option name="number" value="00145" />
-      <option name="presentableId" value="LOCAL-00145" />
-      <option name="project" value="LOCAL" />
-      <updated>1721859935334</updated>
     </task>
     <task id="LOCAL-00146" summary=".idea">
       <option name="closed" value="true" />
@@ -565,7 +598,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724799700714</updated>
     </task>
-    <option name="localTasksCounter" value="194" />
+    <task id="LOCAL-00194" summary="Made the terminal window look good">
+      <option name="closed" value="true" />
+      <created>1724801267554</created>
+      <option name="number" value="00194" />
+      <option name="presentableId" value="LOCAL-00194" />
+      <option name="project" value="LOCAL" />
+      <updated>1724801267554</updated>
+    </task>
+    <option name="localTasksCounter" value="195" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -580,7 +621,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Used Akascape thememaker, adjusting to be a toplevel" />
     <MESSAGE value="Added a call to display theme maker" />
     <MESSAGE value="Updated colour scheme function call" />
     <MESSAGE value="Added scale settings" />
@@ -605,6 +645,7 @@
     <MESSAGE value="Added user privalledged by disabeling setting based on a users role. added base for config menu" />
     <MESSAGE value="Started on the admin config, can access a fully working python terminal (need to make look nicer), with &quot;working&quot; example code to add users, initialise database, and change main database path" />
     <MESSAGE value="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more." />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more." />
+    <MESSAGE value="Made the terminal window look good" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the terminal window look good" />
   </component>
 </project>

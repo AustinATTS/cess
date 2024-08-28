@@ -3,6 +3,7 @@ import CTkListbox as ctkl
 import CTkMessagebox as ctkm
 from utils.database import get_db
 import time
+from utils.logging import logger
 
 
 class Scores:
@@ -107,9 +108,10 @@ class Scores:
         return rows
 
     def get_participants(self):
+        individual = 1
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT id, name FROM participants")
+        cursor.execute("SELECT id, name FROM participants WHERE team_id = ?", (individual,))
         rows = cursor.fetchall()
         conn.close()
         return rows
@@ -123,10 +125,30 @@ class Scores:
         return rows
 
     def add_score(self, participant_id, event_id, score, date):
+        if participant_id == "" or event_id == "" or score == "" or date == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot add score. Ensure there is a participant, event, score and date assigned", icon="cancel")
+            logger.warning(f"Score for {participant_id} and {event_id} invalid due to insufficient data")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
-        cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
-        team_id = cursor.fetchone()[0]
+
+        try:
+            cursor.execute("SELECT team_id FROM participants WHERE id = ?", (participant_id,))
+            team_id = cursor.fetchone()[0]
+
+        except TypeError as e:
+            if participant_id == "21-25":
+                team_id = 2
+            elif participant_id == "26-30":
+                team_id = 3
+            elif participant_id == "31-35":
+                team_id = 4
+            elif participant_id == "36-40":
+                team_id = 5
+            else:
+                ctkm.CTkMessagebox(title="Error", message=f"Team ID invalid\n{e}", icon="cancel")
+
 
         if team_id == 1:
             cursor.execute("SELECT COUNT(*) FROM scores WHERE participant_id = ?", (participant_id,))
@@ -134,29 +156,40 @@ class Scores:
             if event_count >= 5:
                 ctkm.CTkMessagebox(title="Error", message="Participant in Team 1 cannot attend more than 5 events",
                                    icon="cancel")
+                logger.warning(f"score cannot be added. {participant_id} attended max events")
                 conn.close()
                 return
 
             cursor.execute("INSERT INTO scores (participant_id, event_id, score, date, team_id) VALUES (?, ?, ?, ?, ?)",
                            (participant_id, event_id, score, date, team_id))
         else:
-            cursor.execute("SELECT id FROM participants WHERE team_id = ?", (team_id,))
-            team_members = cursor.fetchall()
-            for member in team_members:
-                cursor.execute(
-                    "INSERT OR IGNORE INTO scores (participant_id, event_id, score, date, team_id) VALUES (?, ?, ?, ?, ?)",
-                    (member[0], event_id, score, date, team_id))
+            cursor.execute("SELECT COUNT(*) FROM scores WHERE team_id = ?", (team_id,))
+            event_count = cursor.fetchone()[0]
+            if event_count >= 5:
+                ctkm.CTkMessagebox(title="Error", message=f"Team {team_id} cannot attend more than 5 events", icon="cancel")
+                conn.close()
+                return
+
+            participant_id = f"Team {team_id - 1 }"
+            cursor.execute("INSERT INTO scores (participant_id, event_id, score, date, team_id) VALUES (?, ?, ?, ?, ?)", (participant_id, event_id, score, date, team_id))
 
         conn.commit()
         conn.close()
+        logger.info(f"Score added for {participant_id} in {event_id}")
 
     def update_score(self, score_id, participant_id, event_id, score, date):
+        if participant_id == "" or event_id == "" or score == "" or date == "":
+            ctkm.CTkMessagebox(title="Error", message="Cannot update score. Ensure there is a participant, event, score and date assigned", icon="cancel")
+            logger.warning(f"Score for {participant_id} in {event_id} cannot be updated: Insufficient data")
+            return
+
         conn = get_db()
         cursor = conn.cursor()
         cursor.execute("UPDATE scores SET participant_id=?, event_id=?, score=?, date=? WHERE id=?",
                        (participant_id, event_id, score, date, score_id))
         conn.commit()
         conn.close()
+        logger.info(f"Score for {participant_id} in {event_id} has been updated")
 
     def delete_score(self, score_id):
         conn = get_db()
@@ -164,6 +197,7 @@ class Scores:
         cursor.execute("DELETE FROM scores WHERE id=?", (score_id,))
         conn.commit()
         conn.close()
+        logger.info(f"Score for {score_id} has been deleted")
 
     def update_entry_fields(self, event):
         selected_item = self.score_listbox.get(self.score_listbox.curselection())
@@ -202,6 +236,7 @@ class Scores:
 
     def populate_comboboxes(self):
         participants = self.get_participants()
+        participants += [("21-25", "Team 1"), ("26-30", "Team 2"), ("31-35", "Team 3"), ("36-40", "Team 4")]
         self.participant_combo.configure(values=[f"{id} - {name}" for id, name in participants])
 
         events = self.get_events()

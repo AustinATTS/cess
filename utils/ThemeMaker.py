@@ -11,6 +11,7 @@ import copy
 from utils.database import get_db
 from gui.login import Login
 from gui.main import Main
+from utils.logging import logger
 
 class ThemeMaker(ctk.CTkToplevel):
     # --------------------Main Structure of the Theme File--------------------#
@@ -349,8 +350,10 @@ class ThemeMaker(ctk.CTkToplevel):
                     json.dump(export_data, f, indent=2)
                     f.close()
                 ctkm.CTkMessagebox(title="Exported!", message="Theme saved successfully!")
+                logger.info(f"Theme file has been saved")
         except:
             ctkm.CTkMessagebox(title="Error!", message="Something went wrong!")
+            logger.warning(f"There is an error saving the theme")
 
     def load(self):
         """ load any theme file """
@@ -391,6 +394,7 @@ class ThemeMaker(ctk.CTkToplevel):
             conn.commit()
             conn.close()
             ctkm.CTkMessagebox(title="Success", message="Theme file path saved successfully")
+            logger.info(f"The theme has been saved to the users path")
             self.apply_user_theme(user_id)
 
     def apply_user_theme(self, user_id):

@@ -1,9 +1,9 @@
 customtkinter~=5.2.2
-CTkMenuBar~=0.8
 CTkMessagebox~=2.7
 pillow~=10.4.0
 CTkListbox~=1.4
 fpdf~=1.7.2
+tklinenums~=1.7.1
+Pygments~=2.18.0
+CTkMenuBar~=0.8
 PyMuPDF
-TkLineNums
-Pygments

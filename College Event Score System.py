@@ -3,6 +3,7 @@ import CTkMenuBar as ctkmb
 from gui.login import Login
 import CTkMessagebox as ctkm
 from utils.file import save, restore_latest, restore_custom
+from utils.logging import logger
 from utils.settings import colour_scheme, scale, logout
 from utils.about import website, github, description
 
@@ -58,6 +59,7 @@ class App(ctk.CTk):
             self.main.clear_page()
         self.geometry(f"{self.original_width}x{self.original_height}")
         self.login.load_page(self)
+        logger.info(f"User has logged out")
 
 if __name__ == "__main__":
     try:
