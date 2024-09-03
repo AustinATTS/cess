@@ -1,0 +1,84 @@
+('C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+ 'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+ 'System\\College Event Score System.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\PYZ-00.pyz',
+   'PYZ'),
+  ('struct',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\localpycs\\struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\localpycs\\pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\localpycs\\pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\localpycs\\pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyimod04_pywin32',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\build\\College Event Score '
+   'System\\localpycs\\pyimod04_pywin32.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('pyi_rth_setuptools',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_setuptools.py',
+   'PYSOURCE'),
+  ('pyi_rth__tkinter',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\.venv\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth__tkinter.py',
+   'PYSOURCE'),
+  ('College Event Score System',
+   'C:\\Users\\AustinWelsh-Graham\\OneDrive - Austin '
+   'ATTS\\Documents\\Work\\School\\IT\\4\\C\\cess\\College Event Score '
+   'System.py',
+   'PYSOURCE')],
+ 'python312.dll',
+ True,
+ False,
+ False,
+ [],
+ None,
+ None,
+ None)
