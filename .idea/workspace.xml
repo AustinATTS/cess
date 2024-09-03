@@ -4,27 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Made the terminal window look good">
-      <change afterPath="$PROJECT_DIR$/build_exe.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/logs/cess.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logging.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/cess.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/cess.iml" afterDir="false" />
+    <list default="true" id="b57157e7-bec5-42a4-9aed-84fabf2b32fc" name="Changes" comment="Added full logging and created script to generate an .exe">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/College Event Score System.py" beforeDir="false" afterPath="$PROJECT_DIR$/College Event Score System.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/data/database.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/events.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/events.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/participants.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/participants.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/rankings.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/rankings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/reports.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/reports.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/scores.py" beforeDir="false" afterPath="$PROJECT_DIR$/gui/scores.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/ThemeMaker.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/ThemeMaker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/database.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/file.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/random_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/random_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/cess.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/cess.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,35 +49,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.College Event Score System.executor": "Run",
-    "Python.ThemeMaker.executor": "Run",
-    "Python.build_exe.executor": "Run",
-    "Python.config.executor": "Run",
-    "Python.database.executor": "Run",
-    "Python.file.executor": "Run",
-    "Python.login.executor": "Run",
-    "Python.main (1).executor": "Run",
-    "Python.main.executor": "Run",
-    "Python.random_data.executor": "Run",
-    "Python.rankings.executor": "Run",
-    "Python.reports.executor": "Run",
-    "Python.scores.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "deletionFromPopupRequiresConfirmation": "false",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess/assets",
-    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.College Event Score System.executor&quot;: &quot;Run&quot;,
+    &quot;Python.ThemeMaker.executor&quot;: &quot;Run&quot;,
+    &quot;Python.build_exe.executor&quot;: &quot;Run&quot;,
+    &quot;Python.config.executor&quot;: &quot;Run&quot;,
+    &quot;Python.database.executor&quot;: &quot;Run&quot;,
+    &quot;Python.file.executor&quot;: &quot;Run&quot;,
+    &quot;Python.login.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main (1).executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.random_data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.rankings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.reports.executor&quot;: &quot;Run&quot;,
+    &quot;Python.scores.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/AustinWelsh-Graham/OneDrive - Austin ATTS/Documents/Work/School/IT/4/C/cess/assets&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\assets" />
       <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\assets\icons" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\PyInstaller" />
       <recent name="C:\Users\AustinWelsh-Graham\OneDrive - Austin ATTS\Documents\Work\School\IT\4\C\cess\assets\icons" />
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess" />
       <recent name="G:\School\Level 3 BTEC National Foundation Diploma in Information Technology\Unit 4 - Programming\C - Develop a software solution to meet client requirements\cess\assets" />
@@ -213,14 +197,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721422373908</updated>
-    </task>
-    <task id="LOCAL-00146" summary=".idea">
-      <option name="closed" value="true" />
-      <created>1721859990670</created>
-      <option name="number" value="00146" />
-      <option name="presentableId" value="LOCAL-00146" />
-      <option name="project" value="LOCAL" />
-      <updated>1721859990670</updated>
     </task>
     <task id="LOCAL-00147" summary="Added v0.6.">
       <option name="closed" value="true" />
@@ -606,7 +582,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724801267554</updated>
     </task>
-    <option name="localTasksCounter" value="195" />
+    <task id="LOCAL-00195" summary="Added full logging and created script to generate an .exe">
+      <option name="closed" value="true" />
+      <created>1724868059333</created>
+      <option name="number" value="00195" />
+      <option name="presentableId" value="LOCAL-00195" />
+      <option name="project" value="LOCAL" />
+      <updated>1724868059334</updated>
+    </task>
+    <option name="localTasksCounter" value="196" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -621,7 +605,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Added a call to display theme maker" />
     <MESSAGE value="Updated colour scheme function call" />
     <MESSAGE value="Added scale settings" />
     <MESSAGE value="if __name__" />
@@ -646,6 +629,7 @@
     <MESSAGE value="Started on the admin config, can access a fully working python terminal (need to make look nicer), with &quot;working&quot; example code to add users, initialise database, and change main database path" />
     <MESSAGE value="Finished the main config (example code, working terminal, descriptions) however the terminal still needs to be designed more." />
     <MESSAGE value="Made the terminal window look good" />
-    <option name="LAST_COMMIT_MESSAGE" value="Made the terminal window look good" />
+    <MESSAGE value="Added full logging and created script to generate an .exe" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added full logging and created script to generate an .exe" />
   </component>
 </project>
