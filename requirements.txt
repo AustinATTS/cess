@@ -7,3 +7,4 @@ tklinenums~=1.7.1
 Pygments~=2.18.0
 CTkMenuBar~=0.8
 PyMuPDF
+PyInstaller
